@@ -4,7 +4,7 @@ namespace lab1
 {
 	public class Convert
 	{
-		public enum Units {Feet, Yards, Mile, Kilometer, Meter, Ounce, Liter};
+		public enum Units {Feet, Yards, Mile, Kilometer, Meter, Ounce, Liter, Quart, SquareMile, SquareFeet, Acre};
 		private ConvertStrategy convert_strategy;
  
 	    public void SetConvertStrategy(ConvertStrategy convert_strategy)

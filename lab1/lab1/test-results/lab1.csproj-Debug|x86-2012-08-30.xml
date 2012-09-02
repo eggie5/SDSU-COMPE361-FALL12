@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <UnitTestResult>
+      <TestDate>2012-08-30T09:56:16</TestDate>
+      <Passed>0</Passed>
+      <Errors>1</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T09:58:03</TestDate>
+      <Passed>0</Passed>
+      <Errors>1</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T10:10:12</TestDate>
+      <Passed>0</Passed>
+      <Errors>1</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:03:47</TestDate>
+      <Passed>0</Passed>
+      <Errors>1</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:37:34</TestDate>
+      <Passed>0</Passed>
+      <Errors>1</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:41:39</TestDate>
+      <Passed>0</Passed>
+      <Errors>1</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:44:05</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>1</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:44:23</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>1</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:46:41</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>1</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:48:10</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>1</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:48:37</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>1</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:49:28</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>1</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:49:40</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>1</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:53:14</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>1</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:53:51</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>1</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T12:59:48</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>1</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T13:00:02</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>1</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T13:00:16</TestDate>
+      <Passed>1</Passed>
+      <Errors>0</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>Test successful
+
+Execution time: 0.04ms</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T17:03:08</TestDate>
+      <Passed>0</Passed>
+      <Errors>1</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-08-30T17:10:51</TestDate>
+      <Passed>0</Passed>
+      <Errors>1</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+  </Results>
+  <Tests>
+    <TestRecord Name="lab1">
+      <Results>
+        <UnitTestResult>
+          <TestDate>2012-08-30T09:56:16</TestDate>
+          <Passed>0</Passed>
+          <Errors>1</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T09:58:03</TestDate>
+          <Passed>0</Passed>
+          <Errors>1</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T10:10:12</TestDate>
+          <Passed>0</Passed>
+          <Errors>1</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:03:47</TestDate>
+          <Passed>0</Passed>
+          <Errors>1</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:37:34</TestDate>
+          <Passed>0</Passed>
+          <Errors>1</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:41:39</TestDate>
+          <Passed>0</Passed>
+          <Errors>1</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:44:05</TestDate>
+          <Passed>0</Passed>
+          <Errors>0</Errors>
+          <Failures>1</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:44:23</TestDate>
+          <Passed>0</Passed>
+          <Errors>0</Errors>
+          <Failures>1</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:46:41</TestDate>
+          <Passed>0</Passed>
+          <Errors>0</Errors>
+          <Failures>1</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:48:10</TestDate>
+          <Passed>0</Passed>
+          <Errors>0</Errors>
+          <Failures>1</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:48:37</TestDate>
+          <Passed>0</Passed>
+          <Errors>0</Errors>
+          <Failures>1</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:49:28</TestDate>
+          <Passed>0</Passed>
+          <Errors>0</Errors>
+          <Failures>1</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:49:40</TestDate>
+          <Passed>0</Passed>
+          <Errors>0</Errors>
+          <Failures>1</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:53:14</TestDate>
+          <Passed>0</Passed>
+          <Errors>0</Errors>
+          <Failures>1</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:53:51</TestDate>
+          <Passed>0</Passed>
+          <Errors>0</Errors>
+          <Failures>1</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T12:59:48</TestDate>
+          <Passed>0</Passed>
+          <Errors>0</Errors>
+          <Failures>1</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T13:00:02</TestDate>
+          <Passed>0</Passed>
+          <Errors>0</Errors>
+          <Failures>1</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T13:00:16</TestDate>
+          <Passed>1</Passed>
+          <Errors>0</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>Test successful
+
+Execution time: 0.04ms</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T17:03:08</TestDate>
+          <Passed>0</Passed>
+          <Errors>1</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-08-30T17:10:51</TestDate>
+          <Passed>0</Passed>
+          <Errors>1</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+      </Results>
+      <Tests>
+        <TestRecord Name="TestCalc">
+          <Results>
+            <UnitTestResult>
+              <TestDate>2012-08-30T09:56:16</TestDate>
+              <Passed>0</Passed>
+              <Errors>1</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T09:58:03</TestDate>
+              <Passed>0</Passed>
+              <Errors>1</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T10:10:12</TestDate>
+              <Passed>0</Passed>
+              <Errors>1</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:03:47</TestDate>
+              <Passed>0</Passed>
+              <Errors>1</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:37:34</TestDate>
+              <Passed>0</Passed>
+              <Errors>1</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:41:39</TestDate>
+              <Passed>0</Passed>
+              <Errors>1</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:44:05</TestDate>
+              <Passed>0</Passed>
+              <Errors>0</Errors>
+              <Failures>1</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:44:23</TestDate>
+              <Passed>0</Passed>
+              <Errors>0</Errors>
+              <Failures>1</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:46:41</TestDate>
+              <Passed>0</Passed>
+              <Errors>0</Errors>
+              <Failures>1</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:48:10</TestDate>
+              <Passed>0</Passed>
+              <Errors>0</Errors>
+              <Failures>1</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:48:37</TestDate>
+              <Passed>0</Passed>
+              <Errors>0</Errors>
+              <Failures>1</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:49:28</TestDate>
+              <Passed>0</Passed>
+              <Errors>0</Errors>
+              <Failures>1</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:49:40</TestDate>
+              <Passed>0</Passed>
+              <Errors>0</Errors>
+              <Failures>1</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:53:14</TestDate>
+              <Passed>0</Passed>
+              <Errors>0</Errors>
+              <Failures>1</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:53:51</TestDate>
+              <Passed>0</Passed>
+              <Errors>0</Errors>
+              <Failures>1</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T12:59:48</TestDate>
+              <Passed>0</Passed>
+              <Errors>0</Errors>
+              <Failures>1</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T13:00:02</TestDate>
+              <Passed>0</Passed>
+              <Errors>0</Errors>
+              <Failures>1</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T13:00:16</TestDate>
+              <Passed>1</Passed>
+              <Errors>0</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>Test successful
+
+Execution time: 0.03ms</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T17:03:08</TestDate>
+              <Passed>0</Passed>
+              <Errors>1</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-08-30T17:10:51</TestDate>
+              <Passed>0</Passed>
+              <Errors>1</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+          </Results>
+          <Tests>
+            <TestRecord Name="TestCase">
+              <Results>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T09:56:16</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.NotImplementedException : The requested feature is not implemented.</Message>
+                  <StackTrace>  at lab1.TestCalc.TestCase () [0x00006] in /Users/eggie5/Development/compe375/lab1/lab1/TestCalc.cs:16 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T09:58:03</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.NotImplementedException : The requested feature is not implemented.</Message>
+                  <StackTrace>  at lab1.TestCalc.TestCase () [0x00006] in /Users/eggie5/Development/compe375/lab1/lab1/TestCalc.cs:16 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T10:10:12</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.NotImplementedException : The requested feature is not implemented.</Message>
+                  <StackTrace>  at lab1.TestCalc.TestCase () [0x00006] in /Users/eggie5/Development/compe375/lab1/lab1/TestCalc.cs:16 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:03:47</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.NotImplementedException : The requested feature is not implemented.</Message>
+                  <StackTrace>  at lab1.TestCalc.TestCase () [0x00006] in /Users/eggie5/Development/compe375/lab1/lab1/TestCalc.cs:16 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:37:34</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.NotImplementedException : The requested feature is not implemented.</Message>
+                  <StackTrace>  at lab1.LengthStrategy.convert (Single magnitude, Units from, Units to) [0x00000] in /Users/eggie5/Development/compe361/lab1/lab1/LengthStrategy.cs:16 
+  at lab1.Convert.convert (Single magnitude, Units from, Units to) [0x00000] in /Users/eggie5/Development/compe361/lab1/lab1/Convert.cs:23 
+  at lab1.TestCalc.TestCase () [0x00013] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:19 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:41:39</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.NotImplementedException : The requested feature is not implemented.</Message>
+                  <StackTrace>  at lab1.LengthStrategy.convert (Single magnitude, Units from, Units to) [0x00000] in /Users/eggie5/Development/compe361/lab1/lab1/LengthStrategy.cs:16 
+  at lab1.Convert.convert (Single magnitude, Units from, Units to) [0x00000] in /Users/eggie5/Development/compe361/lab1/lab1/Convert.cs:23 
+  at lab1.TestCalc.TestCase () [0x00013] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:19 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:44:05</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>1</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>  Expected: 0.300000012f
+  But was:  6.9000001f
+</Message>
+                  <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, NUnit.Framework.Constraints.Constraint constraint, System.String message, System.Object[] args) [0x0002c] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:2207 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual, System.String message, System.Object[] args) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:886 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:913 
+  at lab1.TestCalc.TestCase () [0x00021] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:20 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:44:23</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>1</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>  Expected: 0.300000012f
+  But was:  6.9000001f
+</Message>
+                  <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, NUnit.Framework.Constraints.Constraint constraint, System.String message, System.Object[] args) [0x0002c] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:2207 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual, System.String message, System.Object[] args) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:886 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:913 
+  at lab1.TestCalc.TestCase () [0x00021] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:20 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:46:41</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>1</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>  Expected: 0.300000012f
+  But was:  76.6666641f
+</Message>
+                  <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, NUnit.Framework.Constraints.Constraint constraint, System.String message, System.Object[] args) [0x0002c] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:2207 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual, System.String message, System.Object[] args) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:886 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:913 
+  at lab1.TestCalc.TestCase () [0x00021] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:20 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:48:10</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>1</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>  Expected: 0.300000012f
+  But was:  7.1875f
+</Message>
+                  <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, NUnit.Framework.Constraints.Constraint constraint, System.String message, System.Object[] args) [0x0002c] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:2207 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual, System.String message, System.Object[] args) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:886 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:913 
+  at lab1.TestCalc.TestCase () [0x00021] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:20 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:48:37</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>1</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>  Expected: 0.300000012f
+  But was:  7.01039982f
+</Message>
+                  <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, NUnit.Framework.Constraints.Constraint constraint, System.String message, System.Object[] args) [0x0002c] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:2207 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual, System.String message, System.Object[] args) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:886 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:913 
+  at lab1.TestCalc.TestCase () [0x00021] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:20 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:49:28</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>1</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>  Expected: 0.300000012f
+  But was:  0.304800004f
+</Message>
+                  <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, NUnit.Framework.Constraints.Constraint constraint, System.String message, System.Object[] args) [0x0002c] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:2207 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual, System.String message, System.Object[] args) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:886 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:913 
+  at lab1.TestCalc.TestCase () [0x00021] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:20 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:49:40</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>1</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>  Expected: 0.300000012f
+  But was:  0.304800004f
+</Message>
+                  <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, NUnit.Framework.Constraints.Constraint constraint, System.String message, System.Object[] args) [0x0002c] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:2207 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual, System.String message, System.Object[] args) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:886 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:913 
+  at lab1.TestCalc.TestCase () [0x00021] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:20 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:53:14</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>1</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>  Expected: 0.29999999999999999d
+  But was:  0.30479999024640031d
+</Message>
+                  <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, NUnit.Framework.Constraints.Constraint constraint, System.String message, System.Object[] args) [0x0002c] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:2207 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual, System.String message, System.Object[] args) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:886 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:913 
+  at lab1.TestCalc.TestCase () [0x00025] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:20 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:53:51</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>1</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>  Expected: 0.30480000000000002d
+  But was:  0.30479999024640031d
+</Message>
+                  <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, NUnit.Framework.Constraints.Constraint constraint, System.String message, System.Object[] args) [0x0002c] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:2207 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual, System.String message, System.Object[] args) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:886 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:913 
+  at lab1.TestCalc.TestCase () [0x00025] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:20 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T12:59:48</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>1</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>  Expected string length 6 but was 5. Strings differ at index 5.
+  Expected: "0.3048"
+  But was:  "0.304"
+  ----------------^
+</Message>
+                  <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, NUnit.Framework.Constraints.Constraint constraint, System.String message, System.Object[] args) [0x0002c] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:2207 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual, System.String message, System.Object[] args) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:886 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:913 
+  at lab1.TestCalc.TestCase () [0x00025] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:20 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T13:00:02</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>1</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>  String lengths are both 6. Strings differ at index 5.
+  Expected: "0.3048"
+  But was:  "0.3047"
+  ----------------^
+</Message>
+                  <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, NUnit.Framework.Constraints.Constraint constraint, System.String message, System.Object[] args) [0x0002c] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:2207 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual, System.String message, System.Object[] args) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:886 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/nunit24/NUnitFramework/framework/Assert.cs:913 
+  at lab1.TestCalc.TestCase () [0x00025] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:20 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T13:00:16</TestDate>
+                  <Passed>1</Passed>
+                  <Errors>0</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>Test successful
+
+Execution time: 0.02ms</Message>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T17:03:08</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.NotImplementedException : The requested feature is not implemented.</Message>
+                  <StackTrace>  at lab1.VolumeStrategy.convert (Double magnitude, Units from, Units to) [0x00000] in /Users/eggie5/Development/compe361/lab1/lab1/VolumeStrategy.cs:11 
+  at lab1.Convert.convert (Double magnitude, Units from, Units to) [0x00000] in /Users/eggie5/Development/compe361/lab1/lab1/Convert.cs:23 
+  at lab1.TestCalc.TestCase () [0x00048] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:24 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-08-30T17:10:51</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>System.NotImplementedException : The requested feature is not implemented.</Message>
+                  <StackTrace>  at lab1.VolumeStrategy.convert (Double magnitude, Units from, Units to) [0x00000] in /Users/eggie5/Development/compe361/lab1/lab1/VolumeStrategy.cs:11 
+  at lab1.Convert.convert (Double magnitude, Units from, Units to) [0x00000] in /Users/eggie5/Development/compe361/lab1/lab1/Convert.cs:23 
+  at lab1.TestCalc.TestCase () [0x00048] in /Users/eggie5/Development/compe361/lab1/lab1/TestCalc.cs:24 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d5] in /private/tmp/monobuild/build/BUILD/mono-2.10.9/mcs/class/corlib/System.Reflection/MonoMethod.cs:226 </StackTrace>
+                  <ConsoleOutput />
+                  <ConsoleError />
+                </UnitTestResult>
+              </Results>
+              <Tests />
+            </TestRecord>
+          </Tests>
+        </TestRecord>
+      </Tests>
+    </TestRecord>
+  </Tests>
+</TestRecord>

@@ -104,6 +104,12 @@ namespace lab1
 			double meters2= converter.convert(1, Convert.Units.Mile, Convert.Units.Meter);
 			Assert.AreEqual("1609.34", meters2.ToString().Substring(0,7));
 
+			//test string parser
+			LengthStrategy length = new LengthStrategy();
+			Assert.AreEqual(Convert.Units.Meter, length.getUnitFromString("meter"));
+			Assert.AreEqual(Convert.Units.Feet, length.getUnitFromString("feet"));
+			Assert.AreEqual(Convert.Units.Mile, length.getUnitFromString("mile"));
+
 
 		}
 	}

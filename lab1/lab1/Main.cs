@@ -11,30 +11,61 @@ namespace lab1
 			while (true) {
 
 				Console.WriteLine ("Input category: length, volume or area");
-				String unit = Console.ReadLine ().ToLower ().Trim ();
+				String category = Console.ReadLine ().ToLower ().Trim ();
 
 				Console.WriteLine("Input measure");
 				String mag_input =Console.ReadLine();
 				double magnitude=Double.Parse(mag_input);
+
+				Console.WriteLine("Input unit");
+				String unit = Console.ReadLine();
+
+
 				double conversion;
 
-				switch (unit) {
+				switch (category) {
 				case Units.LENGTH:
-					converter.SetConvertStrategy (new LengthStrategy ());
-					conversion = converter.convert(magnitude, Convert.Units.Feet, Convert.Units.Meter); 
+					LengthStrategy length=new LengthStrategy();
+					Convert.Units this_from = length.getUnitFromString(unit);
+					converter.SetConvertStrategy (length);
+
+					foreach(Convert.Units to_conversion in length.Conversions)
+					{
+						conversion = converter.convert(magnitude, this_from, to_conversion); 
+						Console.WriteLine(magnitude + " "+this_from + "(s)" + " = " +" "+conversion.ToString()+" "+to_conversion+ "(s)" );
+					}
+
 					break;
 				case Units.VOLUME:
+					VolumeStrategy volume = new VolumeStrategy();
+					Convert.Units v_from = volume.getUnitFromString(unit);
 					converter.SetConvertStrategy (new VolumeStrategy ());
+
+					foreach(Convert.Units to_conversion in volume.Conversions)
+					{
+						conversion = converter.convert(magnitude, v_from, to_conversion); 
+						Console.WriteLine(magnitude + " "+v_from + "(s)" + " = "+" "+conversion.ToString()+" " +to_conversion+ "(s)"  );
+					}
 					break;
 				case Units.AREA:
+					AreaStrategy area = new AreaStrategy();
+					Convert.Units a_from = area.getUnitFromString(unit);
 					converter.SetConvertStrategy (new AreaStrategy ());
+
+					foreach(Convert.Units to_conversion in area.Conversions)
+					{
+						conversion = converter.convert(magnitude, a_from, to_conversion); 
+						Console.WriteLine(magnitude + " "+a_from + "(s)" + " = " +" "+conversion.ToString()+" "+to_conversion+ "(s)" );
+					}
 					break;
 				default:
 					break;
 				}
 
-				Console.WriteLine("output= "+conversion.ToString());
+
 			}//end while
 		}
+
+
 	}
 }

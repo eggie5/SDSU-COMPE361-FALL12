@@ -8,6 +8,34 @@ namespace lab1
 	{
 		//square feet, square miles and acres
 
+		private Convert.Units [] conversions = {Convert.Units.SquareFeet, Convert.Units.SquareMile, Convert.Units.Acre};
+
+		public Convert.Units[] Conversions {
+			get {
+				return conversions;
+			}
+		}
+
+		public Convert.Units getUnitFromString (string unit)
+		{
+			Convert.Units _unit;
+			switch (unit) {
+			case "sqfeet":
+				_unit= Convert.Units.SquareFeet;
+				break;
+			case "sqmile":
+				_unit = Convert.Units.SquareMile;
+				break;
+			case "acre":
+				_unit = Convert.Units.Acre;
+				break;
+			default:
+				throw new Exception("Could not parse: "+unit);
+			}
+
+			return _unit;
+		}
+
 		public override double convert (double magnitude, Convert.Units from, Convert.Units to)
 		{
 			if (from == Convert.Units.SquareFeet && to == Convert.Units.SquareMile) {
@@ -22,6 +50,9 @@ namespace lab1
 				return acres_to_sqfeet (magnitude);
 			} else if (from == Convert.Units.Acre && to == Convert.Units.SquareMile) {
 				return acres_to_sqmiles (magnitude);
+			} else if (from == to)
+			{
+				return magnitude;
 			}
 		
 

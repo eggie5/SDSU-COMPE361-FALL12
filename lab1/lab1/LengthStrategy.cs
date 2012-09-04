@@ -4,10 +4,32 @@ namespace lab1
 {
 	public class LengthStrategy : ConvertStrategy
 	{
-//		public enum Units {feet, meters, miles};
+		private Convert.Units [] conversions = {Convert.Units.Feet, Convert.Units.Meter, Convert.Units.Mile};
 
-		public LengthStrategy ()
+		public Convert.Units[] Conversions {
+			get {
+				return conversions;
+			}
+		}
+
+		public Convert.Units getUnitFromString (string unit)
 		{
+			Convert.Units _unit;
+			switch (unit) {
+			case "meter":
+				_unit= Convert.Units.Meter;
+				break;
+			case "feet":
+				_unit = Convert.Units.Feet;
+				break;
+			case "mile":
+				_unit = Convert.Units.Mile;
+				break;
+			default:
+				throw new Exception("Could not parse: "+unit);
+			}
+
+			return _unit;
 		}
 
 		//implement interface
@@ -20,11 +42,14 @@ namespace lab1
 			} else if (from == Convert.Units.Meter && to == Convert.Units.Feet) {
 				return meters_to_feet (magnitude);
 			} else if (from == Convert.Units.Meter && to == Convert.Units.Mile) {
-				return meters_to_miles(magnitude);
+				return meters_to_miles (magnitude);
 			} else if (from == Convert.Units.Mile && to == Convert.Units.Feet) {
-				return miles_to_feet(magnitude);
+				return miles_to_feet (magnitude);
 			} else if (from == Convert.Units.Mile && to == Convert.Units.Meter) {
-				return miles_to_meters(magnitude);
+				return miles_to_meters (magnitude);
+			} else if (from == to)
+			{
+				return magnitude;
 			}
 
 			//no conversion possible

@@ -6,37 +6,19 @@ namespace lab1
 {
 	class VolumeStrategy : ConvertStrategy
 	{
-		private Convert.Units [] conversions = {Convert.Units.Ounce, Convert.Units.Liter, Convert.Units.Quart};
+		private static Convert.Units [] conversions = {Convert.Units.Ounce, Convert.Units.Liter, Convert.Units.Quart};
 
-		public Convert.Units[] Conversions {
+		public static Convert.Units[] Conversions {
 			get {
 				return conversions;
 			}
 		}
 
-		public Convert.Units getUnitFromString (string unit)
-		{
-			Convert.Units _unit;
-			switch (unit) {
-			case "ounce":
-				_unit= Convert.Units.Ounce;
-				break;
-			case "liter":
-				_unit = Convert.Units.Liter;
-				break;
-			case "quart":
-				_unit = Convert.Units.Quart;
-				break;
-			default:
-				throw new Exception("Could not parse: "+unit);
-			}
-
-			return _unit;
-		}
 
 		//ounces, quarts and liters
 		public override double convert (double magnitude, Convert.Units from, Convert.Units to)
 		{
+
 			if (from == Convert.Units.Ounce && to == Convert.Units.Liter) {
 				return ounces_to_liters (magnitude);
 			} else if (from == Convert.Units.Ounce && to == Convert.Units.Quart) {

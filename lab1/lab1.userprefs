@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="lab1/AreaStrategy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="lab1/Main.cs">
     <Files>
       <File FileName="lab1/TestCalc.cs" Line="10" Column="21" />
       <File FileName="lab1/AreaStrategy.cs" Line="30" Column="24" />
-      <File FileName="lab1/Main.cs" Line="58" Column="42" />
+      <File FileName="lab1/Main.cs" Line="30" Column="34" />
       <File FileName="lab1/LengthStrategy.cs" Line="50" Column="5" />
       <File FileName="lab1/VolumeStrategy.cs" Line="55" Column="5" />
       <File FileName="lab1/Convert.cs" Line="23" Column="1" />
@@ -14,7 +14,7 @@
         <State expanded="True">
           <Node name="lab1" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="AreaStrategy.cs" selected="True" />
+            <Node name="Main.cs" selected="True" />
           </Node>
           <Node name="lab1tests" expanded="True" />
         </State>

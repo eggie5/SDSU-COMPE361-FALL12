@@ -8,33 +8,15 @@ namespace lab1
 	{
 		//square feet, square miles and acres
 
-		private Convert.Units [] conversions = {Convert.Units.SquareFeet, Convert.Units.SquareMile, Convert.Units.Acre};
+		private static Convert.Units [] conversions = {Convert.Units.SquareFeet, Convert.Units.SquareMile, Convert.Units.Acre};
 
-		public Convert.Units[] Conversions {
+		public static Convert.Units[] Conversions {
 			get {
 				return conversions;
 			}
 		}
 
-		public Convert.Units getUnitFromString (string unit)
-		{
-			Convert.Units _unit;
-			switch (unit) {
-			case "sqfeet":
-				_unit= Convert.Units.SquareFeet;
-				break;
-			case "sqmile":
-				_unit = Convert.Units.SquareMile;
-				break;
-			case "acre":
-				_unit = Convert.Units.Acre;
-				break;
-			default:
-				throw new Exception("Could not parse: "+unit);
-			}
 
-			return _unit;
-		}
 
 		public override double convert (double magnitude, Convert.Units from, Convert.Units to)
 		{

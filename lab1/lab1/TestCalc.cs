@@ -105,10 +105,9 @@ namespace lab1
 			Assert.AreEqual("1609.34", meters2.ToString().Substring(0,7));
 
 			//test string parser
-			LengthStrategy length = new LengthStrategy();
-			Assert.AreEqual(Convert.Units.Meter, length.getUnitFromString("meter"));
-			Assert.AreEqual(Convert.Units.Feet, length.getUnitFromString("feet"));
-			Assert.AreEqual(Convert.Units.Mile, length.getUnitFromString("mile"));
+			Assert.AreEqual(Convert.Units.Meter, converter.ParseUnitsString("meter"));
+			Assert.AreEqual(Convert.Units.Feet, converter.ParseUnitsString("feet"));
+			Assert.AreEqual(Convert.Units.Mile, converter.ParseUnitsString("mile"));
 
 
 		}

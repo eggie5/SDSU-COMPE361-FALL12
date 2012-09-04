@@ -4,33 +4,14 @@ namespace lab1
 {
 	public class LengthStrategy : ConvertStrategy
 	{
-		private Convert.Units [] conversions = {Convert.Units.Feet, Convert.Units.Meter, Convert.Units.Mile};
+		private static Convert.Units [] conversions = {Convert.Units.Feet, Convert.Units.Meter, Convert.Units.Mile};
 
-		public Convert.Units[] Conversions {
+		public static Convert.Units[] Conversions {
 			get {
 				return conversions;
 			}
 		}
 
-		public Convert.Units getUnitFromString (string unit)
-		{
-			Convert.Units _unit;
-			switch (unit) {
-			case "meter":
-				_unit= Convert.Units.Meter;
-				break;
-			case "feet":
-				_unit = Convert.Units.Feet;
-				break;
-			case "mile":
-				_unit = Convert.Units.Mile;
-				break;
-			default:
-				throw new Exception("Could not parse: "+unit);
-			}
-
-			return _unit;
-		}
 
 		//implement interface
 		public override double convert (double magnitude, Convert.Units from, Convert.Units to)

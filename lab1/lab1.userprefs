@@ -1,20 +1,20 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="lab1/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="lab1/VolumeStrategy.cs">
     <Files>
-      <File FileName="lab1/TestCalc.cs" Line="10" Column="21" />
-      <File FileName="lab1/AreaStrategy.cs" Line="30" Column="24" />
-      <File FileName="lab1/Main.cs" Line="30" Column="34" />
-      <File FileName="lab1/LengthStrategy.cs" Line="50" Column="5" />
-      <File FileName="lab1/VolumeStrategy.cs" Line="55" Column="5" />
-      <File FileName="lab1/Convert.cs" Line="23" Column="1" />
+      <File FileName="lab1/TestCalc.cs" Line="107" Column="24" />
+      <File FileName="lab1/AreaStrategy.cs" Line="13" Column="16" />
+      <File FileName="lab1/Main.cs" Line="45" Column="54" />
+      <File FileName="lab1/LengthStrategy.cs" Line="58" Column="37" />
+      <File FileName="lab1/VolumeStrategy.cs" Line="70" Column="37" />
+      <File FileName="lab1/Convert.cs" Line="26" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="lab1" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="Main.cs" selected="True" />
+            <Node name="VolumeStrategy.cs" selected="True" />
           </Node>
           <Node name="lab1tests" expanded="True" />
         </State>

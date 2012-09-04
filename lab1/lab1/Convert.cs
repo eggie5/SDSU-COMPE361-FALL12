@@ -7,9 +7,7 @@ namespace lab1
 		public enum Units
 		{
 			Feet,
-			Yards,
 			Mile,
-			Kilometer,
 			Meter,
 			Ounce,
 			Liter,

@@ -5,7 +5,7 @@ using lab1;
 namespace lab1
 {
 	[TestFixture()]
-	public class TestCalc
+	public class Test
 	{
 		Convert converter;
 

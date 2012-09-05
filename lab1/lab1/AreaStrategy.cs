@@ -1,10 +1,9 @@
 using System;
-using NUnit.Framework;
 using lab1;
 
 namespace lab1
 {
-	class AreaStrategy : ConvertStrategy
+	public class AreaStrategy : ConvertStrategy
 	{
 		//square feet, square miles and acres
 

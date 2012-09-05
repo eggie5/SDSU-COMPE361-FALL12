@@ -1,10 +1,9 @@
 using System;
-using NUnit.Framework;
 using lab1;
 
 namespace lab1
 {
-	class VolumeStrategy : ConvertStrategy
+	public class VolumeStrategy : ConvertStrategy
 	{
 		private static Convert.Units [] conversions = {Convert.Units.Ounce, Convert.Units.Liter, Convert.Units.Quart};
 

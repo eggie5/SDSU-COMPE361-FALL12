@@ -31,8 +31,11 @@ namespace lab2calculatorstate_machine
 		public override void Calculate (Calc calc)
 		{
 			if (calc.pending_op != null) {
+
 				Complex total = calc.pending_op.compute(calc.Opperand1, calc.Opperand2);
+				calc.Opperand1=total;
 				calc.Total = total;
+
 
 				calc.CurrentState = CompState.Singleton;
 			} else {

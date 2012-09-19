@@ -1,0 +1,1 @@
+This is an app that does conversions for length, volume and area units. It has a console UI. After some reasearch, it seemed like the "stategy pattern" design pattern from the gang-of-four book was the best fit. The implementation was straight forward and I really like the results. Very clear code.

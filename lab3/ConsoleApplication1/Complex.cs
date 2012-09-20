@@ -55,14 +55,24 @@ namespace ComplexNumbers
 			get	//returns angle in degrees, between -180 and +180
 			{
 				double angle = Math.Atan2(imag, real); // Notice the order of the arguments
+
 				// Angle in radians, between -pi and +pi
 				// Convert to degrees
 				return angle * 180 / Math.PI;
 			}
 			set	// assumes value is in degrees
 			{
+				double angle = value;
+				double mag = this.Magnitude;
+
+				real = Math.Sqrt((Math.Pow(mag,2))
+				                 /(Math.Pow((Math.Tan(angle * Math.PI / 180)),2)+1));
+				imag=Math.Tan(angle * Math.PI / 180) * real;
+
 			}
 		}
+
+
 
 
 		public override string ToString()

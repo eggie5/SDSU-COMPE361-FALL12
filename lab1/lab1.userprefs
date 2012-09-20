@@ -7,14 +7,14 @@
       <File FileName="lab1/Convert.cs" Line="26" Column="11" />
       <File FileName="lab1/ConvertStrategy.cs" Line="1" Column="1" />
       <File FileName="lab1/LengthStrategy.cs" Line="58" Column="37" />
-      <File FileName="lab1/Main.cs" Line="45" Column="54" />
       <File FileName="lab1/Units.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="lab1" expanded="True" selected="True">
+          <Node name="lab1" expanded="True">
             <Node name="References" expanded="True" />
+            <Node name="Convert.cs" selected="True" />
           </Node>
           <Node name="Tests" expanded="True">
             <Node name="References" expanded="True" />

@@ -3,15 +3,16 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="ComplexTests/Test.cs">
     <Files>
       <File FileName="ConsoleApplication1/Program.cs" Line="26" Column="2" />
-      <File FileName="ConsoleApplication1/Complex.cs" Line="90" Column="57" />
-      <File FileName="ComplexTests/Test.cs" Line="85" Column="15" />
+      <File FileName="ConsoleApplication1/Complex.cs" Line="68" Column="38" />
+      <File FileName="ComplexTests/Test.cs" Line="26" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
+        <State expanded="True">
           <Node name="ComplexNumbers" expanded="True" />
           <Node name="ComplexTests" expanded="True">
             <Node name="References" expanded="True" />
+            <Node name="Test.cs" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -23,7 +24,7 @@
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
         <State expanded="True">
-          <Node name="ComplexTests" selected="True" />
+          <Node name="ComplexTests" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

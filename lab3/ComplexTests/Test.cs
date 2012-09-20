@@ -7,6 +7,45 @@ namespace ComplexTests
 	[TestFixture()]
 	public class Test
 	{
+
+		[Test()]
+		public void TestMagnitude ()
+		{
+			Complex c1 = new Complex(3,4);
+
+			double expected= 5.0;
+			
+			Assert.AreEqual(expected, c1.Magnitude);
+
+
+		}
+
+		[Test()]
+		public void TestAngle ()
+		{
+			//get angle
+			Complex c1 = new Complex(3,4);
+			double expected= 53.13;
+			Assert.AreEqual(expected.ToString().Substring(0,4), c1.Angle.ToString().Substring(0,4));
+
+			//set angle
+			Complex c2 = new Complex(5,4);
+			Assert.AreEqual(38.65.ToString().Substring(0,4), c2.Angle.ToString().Substring(0,4));
+			Assert.AreEqual(6.4031.ToString().Substring(0,4), c2.Magnitude.ToString().Substring(0,4));
+			double mag_before = c2.Magnitude;
+
+
+			c2.Angle=45;
+			//should give us real = 2.7 and img = 2.7
+
+			Assert.AreEqual(2.777777.ToString().Substring(0,4), c2.Real.ToString().Substring(0,4));
+			Assert.AreEqual(2.777777.ToString().Substring(0,4), c2.Imag.ToString().Substring(0,4));
+			Assert.AreEqual(mag_before, c2.Magnitude);
+			
+
+		}
+
+
 		[Test()]
 		public void TestAdd ()
 		{

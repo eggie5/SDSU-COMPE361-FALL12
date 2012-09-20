@@ -83,7 +83,8 @@ namespace lab2calculator
 				return op_str;
 			} else {
 				Console.WriteLine ("INVALID OPERATION ENTRY.\nENTER +, -, *, /, m or q");
-				throw new ClearException (); //restart whole flow
+				Console.Write ("Enter operation: ");
+				throw new InvalidInputException (op_str); //restart whole flow
 			}
 		}
 
@@ -109,7 +110,14 @@ namespace lab2calculator
 
 					//get opperator
 					Console.Write ("Enter operation: ");
-					String opperator = ConsoleReadOperatorInput ();
+					String opperator;
+					try{
+					opperator = ConsoleReadOperatorInput ();
+					}
+					catch (InvalidInputException)
+					{
+						opperator = ConsoleReadOperatorInput();
+					}
 
 					//get opperand2
 					Console.Write ("Enter operand2: ");

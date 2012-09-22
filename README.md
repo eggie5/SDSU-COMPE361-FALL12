@@ -7,3 +7,4 @@ C# programming
 
 * Lab 1 - Conversion App that uses Strategy Pattern
 * Lab 2 - Calculator that uses State Pattern
+* Lab 3 - Calculator (same as last lab, but WE implement the Complex class)

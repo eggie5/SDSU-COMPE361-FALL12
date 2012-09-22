@@ -38,8 +38,8 @@ namespace ComplexTests
 			c2.Angle=45;
 			//should give us real = 2.7 and img = 2.7
 
-			Assert.AreEqual(2.777777.ToString().Substring(0,4), c2.Real.ToString().Substring(0,4));
-			Assert.AreEqual(2.777777.ToString().Substring(0,4), c2.Imag.ToString().Substring(0,4));
+			Assert.AreEqual(4.5254.ToString().Substring(0,4), c2.Real.ToString().Substring(0,4));
+			Assert.AreEqual(4.5254.ToString().Substring(0,4), c2.Imag.ToString().Substring(0,4));
 			Assert.AreEqual(mag_before, c2.Magnitude);
 			
 

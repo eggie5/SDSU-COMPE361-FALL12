@@ -65,9 +65,8 @@ namespace ComplexNumbers
 				double angle = value;
 				double mag = this.Magnitude;
 
-				real = Math.Sqrt((Math.Pow(mag,2))
-				                 /(Math.Pow((Math.Tan(angle * Math.PI / 180)),2)+1));
-				imag=Math.Tan(angle * Math.PI / 180) * real;
+				real = Math.Cos(angle * Math.PI / 180)*mag;
+				imag= Math.Sin(angle * Math.PI / 180)*mag;
 
 			}
 		}

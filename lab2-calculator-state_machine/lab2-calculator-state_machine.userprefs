@@ -1,25 +1,24 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="lab2-calculator-state_machine/Main.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="lab2-calculator-state_machine/ClearException.cs">
     <Files>
-      <File FileName="lab2-calculator-state_machine/Main.cs" Line="63" Column="1" />
-      <File FileName="lab2-calculator-state_machine/Calc.cs" Line="77" Column="1" />
-      <File FileName="lab2-calculator-state_machine/StartState.cs" Line="10" Column="3" />
-      <File FileName="lab2-calculator-state_machine/Opperations.cs" Line="8" Column="18" />
-      <File FileName="lab2-calculator-state_machine/OpperatorEntredState.cs" Line="24" Column="26" />
-      <File FileName="lab2-calculator-state_machine/CompState.cs" Line="34" Column="70" />
-      <File FileName="lab2-calculator-state_machine/OpperandEnteredState.cs" Line="6" Column="1" />
-      <File FileName="../lab2-calculator/lab2-calculator/Main.cs" Line="150" Column="7" />
-      <File FileName="lab2-calculator-state_machine/IBinOp.cs" Line="8" Column="45" />
-      <File FileName="lab2-calculator-state_machine/CalcState.cs" Line="10" Column="1" />
-      <File FileName="lab2-calculator-state_machine/ErrorState.cs" Line="6" Column="1" />
+      <File FileName="lab2-calculator-state_machine/Main.cs" Line="9" Column="4" />
+      <File FileName="../lab2-calculator/lab2-calculator/Main.cs" Line="44" Column="3" />
+      <File FileName="lab2-calculator-state_machine/Calc.cs" Line="60" Column="16" />
+      <File FileName="lab2-calculator-state_machine/OpperatorEntredState.cs" Line="19" Column="29" />
+      <File FileName="lab2-calculator-state_machine/OpperandEnteredState.cs" Line="36" Column="7" />
+      <File FileName="lab2-calculator-state_machine/ErrorState.cs" Line="26" Column="21" />
+      <File FileName="Tests/Test.cs" Line="127" Column="45" />
+      <File FileName="lab2-calculator-state_machine/CompState.cs" Line="27" Column="23" />
+      <File FileName="lab2-calculator-state_machine/ClearException.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="lab2-calculator-state_machine" expanded="True">
-            <Node name="Main.cs" selected="True" />
+            <Node name="ClearException.cs" selected="True" />
           </Node>
+          <Node name="Tests" expanded="True" />
         </State>
       </Pad>
       <Pad Id="ClassPad">
@@ -28,12 +27,15 @@
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
       </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True">
+          <Node name="Tests" selected="True" />
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/eggie5/Development/compe361/lab2-calculator-state_machine/lab2-calculator-state_machine/Main.cs" line="14" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

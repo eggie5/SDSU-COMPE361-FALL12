@@ -22,7 +22,8 @@ namespace lab2calculatorstate_machine
 
 		public override void addOpperator (Calc calc, IBinOp op)
 		{
-			throw new NotImplementedException ();
+			calc.pending_op=op;
+			calc.CurrentState=OpperatorEntredState.Singleton;
 		}
 
 		public override void Calculate (Calc calc)

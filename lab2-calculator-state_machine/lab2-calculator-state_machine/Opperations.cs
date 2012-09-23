@@ -17,6 +17,11 @@ namespace lab2calculatorstate_machine
 			{
 				return n1 + n2;
 			}
+
+			public override string ToString ()
+			{
+				return "+";
+			}
 			
 #endregion
 		}
@@ -32,6 +37,11 @@ namespace lab2calculatorstate_machine
 			public Complex compute (Complex n1, Complex n2)
 			{
 				return n1 - n2;
+			}
+
+			public override string ToString ()
+			{
+				return "-";
 			}
 			
 #endregion
@@ -49,6 +59,11 @@ namespace lab2calculatorstate_machine
 			{
 				return n1 * n2;
 			}
+
+			public override string ToString ()
+			{
+				return "*";
+			}
 			
 #endregion
 		}
@@ -64,6 +79,11 @@ namespace lab2calculatorstate_machine
 			public Complex compute (Complex n1, Complex n2)
 			{
 				return n1 / n2;
+			}
+
+			public override string ToString ()
+			{
+				return "/";
 			}
 			
 #endregion

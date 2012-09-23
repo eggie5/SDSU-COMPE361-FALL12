@@ -3,12 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab2-calculator-state_machine", "lab2-calculator-state_machine\lab2-calculator-state_machine.csproj", "{AEA01559-E8F0-4FB4-AEB2-9C3C55DCB5B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{87D45913-6A0D-4B34-9527-0BCE827F9D2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87D45913-6A0D-4B34-9527-0BCE827F9D2C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{87D45913-6A0D-4B34-9527-0BCE827F9D2C}.Debug|x86.Build.0 = Debug|Any CPU
+		{87D45913-6A0D-4B34-9527-0BCE827F9D2C}.Release|x86.ActiveCfg = Release|Any CPU
+		{87D45913-6A0D-4B34-9527-0BCE827F9D2C}.Release|x86.Build.0 = Release|Any CPU
 		{AEA01559-E8F0-4FB4-AEB2-9C3C55DCB5B5}.Debug|x86.ActiveCfg = Debug|x86
 		{AEA01559-E8F0-4FB4-AEB2-9C3C55DCB5B5}.Debug|x86.Build.0 = Debug|x86
 		{AEA01559-E8F0-4FB4-AEB2-9C3C55DCB5B5}.Release|x86.ActiveCfg = Release|x86

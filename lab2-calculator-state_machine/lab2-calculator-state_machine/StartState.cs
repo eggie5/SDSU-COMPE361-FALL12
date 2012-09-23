@@ -17,8 +17,8 @@ namespace lab2calculatorstate_machine
 		public override void addOpperand (Calc calc, Complex c)
 		{
 
-			calc.Total=c;
-			calc.Opperand1 = c;
+			calc.Total=new Complex(0,0);
+			calc.Opperand2 = c;
 			calc.CurrentState = OpperandEnteredState.Singleton;
 
 		}

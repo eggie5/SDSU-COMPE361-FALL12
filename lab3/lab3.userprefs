@@ -1,19 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ComplexTests/Test.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleApplication1/ComplexCalculator.cs">
     <Files>
-      <File FileName="ConsoleApplication1/Program.cs" Line="26" Column="2" />
-      <File FileName="ConsoleApplication1/Complex.cs" Line="68" Column="38" />
-      <File FileName="ComplexTests/Test.cs" Line="26" Column="15" />
+      <File FileName="ConsoleApplication1/Program.cs" Line="10" Column="33" />
+      <File FileName="ConsoleApplication1/Complex.cs" Line="61" Column="11" />
+      <File FileName="ComplexTests/Test.cs" Line="22" Column="32" />
+      <File FileName="ConsoleApplication1/ComplexCalculator.cs" Line="13" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="ComplexNumbers" expanded="True" />
-          <Node name="ComplexTests" expanded="True">
-            <Node name="References" expanded="True" />
-            <Node name="Test.cs" selected="True" />
-          </Node>
+          <Node name="ComplexNumbers" expanded="True" selected="True" />
+          <Node name="ComplexTests" expanded="True" />
         </State>
       </Pad>
       <Pad Id="ClassPad">
@@ -24,7 +22,11 @@
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
         <State expanded="True">
-          <Node name="ComplexTests" expanded="True" selected="True" />
+          <Node name="ComplexTests" expanded="True">
+            <Node name="ComplexTests" expanded="True">
+              <Node name="Test" expanded="True" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

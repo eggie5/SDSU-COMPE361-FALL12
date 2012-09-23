@@ -33,14 +33,14 @@ namespace lab2calculatorstate_machine
 			if (calc.pending_op != null) {
 
 				Complex total = calc.pending_op.compute(calc.Opperand1, calc.Opperand2);
-				calc.Opperand1=total;
+				//calc.Opperand1=total;
 				calc.Total = total;
 
 
 				calc.CurrentState = CompState.Singleton;
 			} else {
 				calc.CurrentState=ErrorState.Singleton;
-				throw new Exception("cannot do calculation w/o pending opperator");
+//				throw new Exception("cannot do calculation w/o pending opperator");
 			}
 		}
 

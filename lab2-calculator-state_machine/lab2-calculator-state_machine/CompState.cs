@@ -15,13 +15,15 @@ namespace lab2calculatorstate_machine
 
 		public override void addOpperand (Calc calc, System.Numerics.Complex c)
 		{
-			calc.Opperand1=c;
+			calc.Opperand1=calc.Total;
+			calc.Opperand2=c;
 			calc.CurrentState=OpperandEnteredState.Singleton;
 			
 		}
 
 		public override void addOpperator (Calc calc, IBinOp op)
 		{
+			calc.Opperand1=calc.Total;
 			calc.pending_op=op;
 			calc.CurrentState=OpperatorEntredState.Singleton;
 		}

@@ -22,7 +22,7 @@ namespace ComplexNumbers
 			imag = 0;
 		}
 
-		public double Real
+		public double new_real
 		{
 			get { return real; }
 			set { real = value; }

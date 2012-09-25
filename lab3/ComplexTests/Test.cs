@@ -18,7 +18,7 @@ namespace ComplexTests
 			Assert.AreEqual(expected, c1.Magnitude);
 
 			c1.Magnitude=10;
-			Assert.AreEqual(6, c1.Real);
+			Assert.AreEqual(6, c1.new_real);
 			Assert.AreEqual(8, c1.Imag);
 
 
@@ -43,13 +43,13 @@ namespace ComplexTests
 			c2.Angle=45;
 			//should give us real = 2.7 and img = 2.7
 
-			Assert.AreEqual(4.5254.ToString().Substring(0,4), c2.Real.ToString().Substring(0,4));
+			Assert.AreEqual(4.5254.ToString().Substring(0,4), c2.new_real.ToString().Substring(0,4));
 			Assert.AreEqual(4.5254.ToString().Substring(0,4), c2.Imag.ToString().Substring(0,4));
 			Assert.AreEqual(mag_before, c2.Magnitude);
 
 			c2.Angle=10;
 			Assert.AreEqual(1.1113.ToString().Substring(0,4), c2.Imag.ToString().Substring(0,4));
-			Assert.AreEqual(6.30277.ToString().Substring(0,4), c2.Real.ToString().Substring(0,4));
+			Assert.AreEqual(6.30277.ToString().Substring(0,4), c2.new_real.ToString().Substring(0,4));
 			Assert.AreEqual(mag_before, c2.Magnitude, 0.00001, "Magnitude must not change");
 			
 

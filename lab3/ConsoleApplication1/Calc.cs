@@ -72,16 +72,23 @@ namespace lab2calculatorstate_machine
 			currentState.Calculate (this);
 		}
 
-		public void enterOperand (String input)
+		public Complex enterRectOperand (String input)
 		{
 			String [] parts = input.Trim ().Split ();
 			if (parts.Length != 2) {
 				currentState = ErrorState.Singleton;
+				return null;
 				//throw new Exception("Could not parse this input");
 			} else {
 				Complex c = new Complex (Double.Parse (parts [0]), Double.Parse (parts [1]));
 				currentState.addOpperand (this, c);
+				return c;
 			}
+		}
+
+		public Complex enterPolarOperand (string opp_str)
+		{
+			throw new NotImplementedException ();
 		}
 
 		public void enterOp (String input_string)

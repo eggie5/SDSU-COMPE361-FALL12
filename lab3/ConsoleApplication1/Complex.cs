@@ -16,6 +16,12 @@ namespace ComplexNumbers
 			imag = im;
 		}
 
+		public Complex (int fake, double magnitude, double angle)
+		{
+			real = Math.Cos(angle * Math.PI / 180)*magnitude;
+			imag= Math.Sin(angle * Math.PI / 180)*magnitude;
+		}
+
 		public Complex()
 		{
 			real = 0;

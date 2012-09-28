@@ -55,9 +55,9 @@ namespace lab2calculatorstate_machine
 		public void Clear ()
 		{
 		
-			total = new Complex(0,0);
-			opperand1=new Complex(0,0);
-			opperand2=new Complex(0,0);
+			total = new Complex (0, 0);
+			opperand1 = new Complex (0, 0);
+			opperand2 = new Complex (0, 0);
 			currentState = StartState.Singleton;
 			//_pendingOp = _noOp;
 		
@@ -86,9 +86,19 @@ namespace lab2calculatorstate_machine
 			}
 		}
 
-		public Complex enterPolarOperand (string opp_str)
+		public Complex enterPolarOperand (string input)
 		{
-			throw new NotImplementedException ();
+			String [] parts = input.Trim ().Split ();
+			if (parts.Length != 2) {
+				currentState = ErrorState.Singleton;
+				return null;
+			} else {
+				//need to convert these to rectangle or add a new constrctor
+				//that takes polar as input
+				Complex c = new Complex (0, Double.Parse (parts [0]), Double.Parse (parts [1]));
+				currentState.addOpperand (this, c);
+				return c;
+			}
 		}
 
 		public void enterOp (String input_string)
@@ -116,7 +126,7 @@ namespace lab2calculatorstate_machine
 				
 			}
 
-			if (opp==null) {
+			if (opp == null) {
 
 			} else {
 				currentState.addOpperator (this, opp);

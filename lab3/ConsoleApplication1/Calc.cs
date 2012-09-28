@@ -78,7 +78,6 @@ namespace lab2calculatorstate_machine
 			if (parts.Length != 2) {
 				currentState = ErrorState.Singleton;
 				return null;
-				//throw new Exception("Could not parse this input");
 			} else {
 				Complex c = new Complex (Double.Parse (parts [0]), Double.Parse (parts [1]));
 				currentState.addOpperand (this, c);

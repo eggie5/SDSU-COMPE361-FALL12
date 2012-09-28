@@ -41,6 +41,7 @@ namespace ComplexNumbers
 			double new_mag = Double.Parse (input);
 			calc.Total.Magnitude = new_mag;
 
+
 		}
 
 		static void ShowEditAngle ()
@@ -91,11 +92,12 @@ namespace ComplexNumbers
 		{
 			calc.compute ();
 			if (calc.CurrentState is CompState) {
-				Console.WriteLine ("({0}) {1} ({2}) = {3}", calc.Opperand1.ToString (), calc.pending_op.ToString (), calc.Opperand2.ToString (), calc.Total.ToString ());
+				Console.WriteLine ("({0}) {1} ({2}) = ({3})", calc.Opperand1, calc.pending_op, calc.Opperand2, calc.Total);
+				Console.WriteLine("operand1: {0}", calc.Total);
 			}
 		}
 		
-		static Boolean HandleMenuInterupt (string input)
+		static Boolean HandleMenuInterupt (string input, Calc calc)
 		{
 			switch (input) {
 			case "q":
@@ -111,22 +113,28 @@ namespace ComplexNumbers
 			case "p":
 				Complex.mode = ComplexNumbers.MODE.Polar;
 				Console.WriteLine ("Calc set to polar mode");
+				Console.WriteLine("{0}", calc.Total);
 				break;
 			case "r":
 				Complex.mode = ComplexNumbers.MODE.Rectangular;
 				Console.WriteLine ("Calc set to rectagular mode");
+				Console.WriteLine("{0}", calc.Total);
 				break;
 			case "M":
 				ShowEditMagnitude ();
+				Console.WriteLine("{0}", calc.Total);
 				break;
 			case "A":
 				ShowEditAngle ();
+				Console.WriteLine("{0}", calc.Total);
 				break;
 			case "R":
 				ShowEditReal ();
+				Console.WriteLine("{0}", calc.Total);
 				break;
 			case "I":
 				ShowEditImag ();
+				Console.WriteLine("{0}", calc.Total);
 				break;
 			default:
 				return false;
@@ -141,8 +149,8 @@ namespace ComplexNumbers
 			while (!(calc.CurrentState is OpperatorEntredState)) {
 				Console.Write ("Operation: ");
 				String opperator = Console.ReadLine ();
-				if (HandleMenuInterupt (opperator)) {
-					continue; //restart while?
+				if (HandleMenuInterupt (opperator, calc)) {
+					continue; //restart while loop
 				}
 				calc.enterOp (opperator);
 				if (calc.CurrentState is ErrorState) {

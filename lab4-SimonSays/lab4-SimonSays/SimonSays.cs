@@ -16,9 +16,10 @@ namespace lab4SimonSays
 		public Color [] newSequence (int length)
 		{
 			Color [] array = new Color[length];
+            Random rand = new Random(DateTime.Now.Millisecond);// don't inline w/ colors[] - wont be random
 
 			for (int i=0; i<length; i++) {
-				array [i] = colors[new Random().Next(0,3)];
+                array[i] = colors[rand.Next(0, 3)];
 			}
 			this.sequence=array;
 			return array;

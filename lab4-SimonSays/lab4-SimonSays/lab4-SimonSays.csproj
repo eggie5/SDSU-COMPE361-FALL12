@@ -49,11 +49,41 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SimonSays.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tone1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tone2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tone3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tone4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tada.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Hardware Fail.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ups.wav" />
   </ItemGroup>
 </Project>

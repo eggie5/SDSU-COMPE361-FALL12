@@ -8,6 +8,7 @@ namespace lab4SimonSays
 		private Color[] sequence;
 		private Color [] colors =  new Color[]{Color.Red, Color.Green, Color.Blue, Color.Yellow};
 
+
 		public SimonSays ()
 		{
 		}

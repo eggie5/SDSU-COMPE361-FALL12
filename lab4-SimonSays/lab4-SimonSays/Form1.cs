@@ -199,7 +199,18 @@ namespace lab4SimonSays
 				case 1:
 					Console.WriteLine ("winner!");
 					winSound.Play ();
-					MessageBox.Show ("you won!");
+					//MessageBox.Show ("you won!");
+					var res = MessageBox.Show(" You Won!\nWould you like to try again?","You Won!", 
+					                                      MessageBoxButtons.YesNo,
+					                                      MessageBoxIcon.Question);
+
+					if (res == DialogResult.Yes)
+					{
+						reset();
+						this.timer_index = 0;
+						this.timer_elapsed = -1;
+
+					}
 
 					reset ();
 					break;

@@ -30,9 +30,9 @@ namespace lab4SimonSays
 		private int ANIMATION_RATE = 1;
 		private int MILLASECONDS = 0;
 		private int timer_index = 0;
-		private int timer_start = 0;
 		private int timer_elapsed;
 		private Color old_color;
+        private int interval;
 
 		public Form1 ()
 		{
@@ -41,6 +41,8 @@ namespace lab4SimonSays
 			greenSound = new SoundPlayer (lab4SimonSays.Properties.Resources.Tone2);
 			blueSound = new SoundPlayer (lab4SimonSays.Properties.Resources.Tone3);
 			yellowSound = new SoundPlayer (lab4SimonSays.Properties.Resources.Tone4);
+
+            comboBoxIntervals.SelectedIndex = 3;
 
 			//Set up the function to call when the timer fires
 			TimerCallback timercb = new TimerCallback (TimerCB);
@@ -71,7 +73,8 @@ namespace lab4SimonSays
 					b.BackColor = Lighten (this.old_color, 0.5);
 				}
                 //unhighlighting it and move index to next button
-                else if (this.timer_elapsed > (1000/Int32.Parse(this.comboBoxIntervals.Text))) {
+                    
+                else if (this.timer_elapsed > (50/this.interval)) {
 					Console.WriteLine ("reseting...");
 					b.BackColor = this.old_color;
 
@@ -79,7 +82,7 @@ namespace lab4SimonSays
 					this.timer_elapsed = -1;
 
 				} else
-					Console.WriteLine ("waiting...");
+					//waiting...
                 
               
 				//Redraw the form
@@ -116,6 +119,7 @@ namespace lab4SimonSays
 			this.game_sequence = colors;
 			this.timer_index = 0;
 			this.timer_elapsed = -1;
+            this.interval = Int32.Parse(comboBoxIntervals.Text);
            
 			//playSequence();
 		}
@@ -229,7 +233,7 @@ namespace lab4SimonSays
 				Console.WriteLine ("Start a new game first...");
 			}
 
-		}
+        }
 
 
 

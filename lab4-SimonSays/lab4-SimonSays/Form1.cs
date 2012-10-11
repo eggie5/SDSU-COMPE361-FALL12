@@ -74,6 +74,7 @@ namespace lab4SimonSays
 				}
                 //unhighlighting it and move index to next button
                     
+				//this should be 1000/this.inteval but it's not working in windows
                 else if (this.timer_elapsed > (50/this.interval)) {
 					Console.WriteLine ("reseting...");
 					b.BackColor = this.old_color;
@@ -229,7 +230,7 @@ namespace lab4SimonSays
 					reset ();
 					break;
 				}
-			} catch (InvalidStateException message) {
+			} catch (InvalidStateException) {
 				Console.WriteLine ("Start a new game first...");
 			}
 

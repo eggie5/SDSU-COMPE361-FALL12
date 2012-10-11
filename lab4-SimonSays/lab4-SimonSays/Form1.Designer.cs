@@ -35,6 +35,7 @@
             this.buttonStart = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBoxIntervals = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -45,7 +46,6 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(251, 161);
             this.button1.TabIndex = 0;
-            this.button1.Text = "";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button_click);
             // 
@@ -57,7 +57,6 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(285, 161);
             this.button2.TabIndex = 1;
-            this.button2.Text = "";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button_click);
             // 
@@ -69,7 +68,6 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(251, 163);
             this.button3.TabIndex = 2;
-            this.button3.Text = "";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button_click);
             // 
@@ -81,7 +79,6 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(285, 163);
             this.button4.TabIndex = 3;
-            this.button4.Text = "";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button_click);
             // 
@@ -120,11 +117,21 @@
             this.comboBoxIntervals.TabIndex = 7;
             this.comboBoxIntervals.ValueMember = "1";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(132, 374);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Interval:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 403);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBoxIntervals);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonStart);
@@ -149,5 +156,6 @@
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBoxIntervals;
+        private System.Windows.Forms.Label label1;
     }
 }

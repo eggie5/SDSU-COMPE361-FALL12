@@ -28,6 +28,21 @@ namespace calc_gui
 			imag = 0;
 		}
 
+		public static Complex Parse (string input)
+		{
+			String [] parts = input.Trim ().Split ();
+			if (parts.Length == 0) {
+				throw new Exception("cannot parse");
+			} else if (parts.Length == 1) { //only real part i.e. non-complex
+				Complex c = new Complex(Double.Parse(parts[0]), 0);
+				return c;
+			}
+			else {
+				Complex c = new Complex (Double.Parse (parts [0]), Double.Parse (parts [1]));
+				return c;
+			}
+		}
+
 		public double new_real
 		{
 			get { return real; }

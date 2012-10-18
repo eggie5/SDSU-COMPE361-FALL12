@@ -15,8 +15,8 @@ namespace calc_gui
 
 		public override void addOpperand (Calc calc, Complex c)
 		{
-			calc.Opperand1=c;
-			calc.CurrentState=OpperandEnteredState.Singleton;
+			//calc.setDisplay(c);
+			//calc.CurrentState=OpperandEnteredState.Singleton;
 		}
 
 		public override void addOpperator (Calc calc, IBinOp op)

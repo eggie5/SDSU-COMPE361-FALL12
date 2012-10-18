@@ -8,8 +8,6 @@ namespace calc_gui
 		private CalcState currentState;
 		private IBinOp _pendingOp;
 		private Complex total;
-		private Complex opperand1;
-		private Complex opperand2;
 
         //current display string
         private String _display;
@@ -19,17 +17,6 @@ namespace calc_gui
 			Clear ();
 		}
 
-		public Complex Opperand1 {
-			get{ return opperand1;}
-			set{ opperand1 = value;}
-
-		}
-
-		public Complex Opperand2 {
-			get{ return opperand2;}
-			set{ opperand2 = value;}
-			
-		}
 
 		public Complex Total {
 			get{ return total;}
@@ -59,8 +46,7 @@ namespace calc_gui
 		{
 		
 			total = new Complex (0, 0);
-			opperand1 = new Complex (0, 0);
-			opperand2 = new Complex (0, 0);
+
 			currentState = StartState.Singleton;
 			//_pendingOp = _noOp;
 		

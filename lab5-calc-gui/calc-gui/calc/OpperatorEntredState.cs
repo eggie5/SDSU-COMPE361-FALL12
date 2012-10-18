@@ -15,9 +15,9 @@ namespace calc_gui
 
 		public override void addOpperand (Calc calc, Complex c)
 		{
-			calc.Opperand1=calc.Total;
-			calc.Opperand2=c;
-
+			//calc.Opperand1=calc.Total;
+			//calc.Opperand2=c;
+			calc.setDisplay(c.ToString());
 //			Complex result = calc.pending_op.compute(calc.Total, calc.Opperand2);
 //			calc.Total=result;
 //			calc.Opperand1=result;
@@ -37,8 +37,8 @@ namespace calc_gui
 
 		public override void Calculate (Calc calc)
 		{
-			Complex total = calc.pending_op.compute(calc.Opperand1, calc.Opperand2);
-			calc.Opperand1=total;
+			Complex total = calc.pending_op.compute(calc.Total, Complex.Parse(calc.getDisplay()));
+			calc.setDisplay(total.ToString());
 			calc.Total = total;
 			calc.CurrentState = CompState.Singleton;
 			//calc.CurrentState=ErrorState.Singleton;
@@ -48,7 +48,7 @@ namespace calc_gui
         public override void enterDigit(Calc calc, char c)
         {
             Console.WriteLine("OpperatorEntredS State: enter character " + c);
-            calc.setDisplay(calc.getDisplay() + c);
+            calc.setDisplay( c.ToString());
             calc.CurrentState = AccumState.Singleton;
         }
 

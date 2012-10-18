@@ -37,7 +37,7 @@ namespace calc_gui
 		{
 			if (calc.pending_op != null) {
 
-				Complex total = calc.pending_op.compute(calc.Opperand1, calc.Opperand2);
+				Complex total = calc.pending_op.compute(calc.Total, Complex.Parse(calc.getDisplay()));
 				//calc.Opperand1=total;
 				calc.Total = total;
 

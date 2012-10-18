@@ -16,7 +16,7 @@ namespace calc_gui
 		{
 
 			calc.Total=new Complex(0,0);
-			calc.Opperand2 = c;
+			calc.setDisplay(c.ToString());
 			calc.CurrentState = OpperandEnteredState.Singleton;
 
 		}

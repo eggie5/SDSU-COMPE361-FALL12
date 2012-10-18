@@ -30,6 +30,7 @@ namespace calc_gui
 
         public override void addOpperator(Calc calc, IBinOp op)
         {
+			calc.Total=Complex.Parse(calc.getDisplay());
             calc.pending_op = op;
             calc.setDisplay("");
             calc.CurrentState = OpperatorEntredState.Singleton;
@@ -40,8 +41,9 @@ namespace calc_gui
         {
             if (calc.pending_op != null)
             {
+				Complex opperand=Complex.Parse(calc.getDisplay());
 
-                Complex total = calc.pending_op.compute(calc.Opperand1, calc.Opperand2);
+                Complex total = calc.pending_op.compute(calc.Total, opperand);
                 //calc.Opperand1=total;
                 calc.Total = total;
                 calc.setDisplay(total.ToString());

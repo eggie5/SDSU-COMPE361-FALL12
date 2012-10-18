@@ -99,7 +99,9 @@ namespace calc_gui
 		{
             if (mode == MODE.Rectangular)
             {
-                if (imag < 0)
+                if (imag == 0)
+                    return String.Format("{0:F2}", real);
+                else if (imag < 0)
                     return String.Format("{0:F2} - j {1:F2}", real, -imag);
                 else
                     return String.Format("{0:F2} + j {1:F2}", real, imag);

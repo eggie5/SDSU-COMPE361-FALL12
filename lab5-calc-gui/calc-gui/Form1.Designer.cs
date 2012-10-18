@@ -267,6 +267,7 @@
             this.buttonMC.TabIndex = 20;
             this.buttonMC.Text = "MC";
             this.buttonMC.UseVisualStyleBackColor = true;
+            this.buttonMC.Click += new System.EventHandler(this.onButtonMemoryClick);
             // 
             // buttonMR
             // 
@@ -276,6 +277,7 @@
             this.buttonMR.TabIndex = 21;
             this.buttonMR.Text = "MR";
             this.buttonMR.UseVisualStyleBackColor = true;
+            this.buttonMR.Click += new System.EventHandler(this.onButtonMemoryClick);
             // 
             // buttonMS
             // 
@@ -285,6 +287,7 @@
             this.buttonMS.TabIndex = 22;
             this.buttonMS.Text = "MS";
             this.buttonMS.UseVisualStyleBackColor = true;
+            this.buttonMS.Click += new System.EventHandler(this.onButtonMemoryClick);
             // 
             // menuStrip1
             // 

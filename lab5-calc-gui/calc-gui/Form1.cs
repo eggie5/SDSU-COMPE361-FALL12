@@ -47,5 +47,26 @@ namespace calc_gui
             calc.enterOp(b.Text);
             this.display.Text = b.Text;
         }
+
+        private void onButtonMemoryClick(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+
+            if (b.Name.Equals(buttonMS.Name))
+            {
+                listBoxMemory.Items.Add(this.calc.getDisplay());
+                Console.WriteLine("Saved {0} to mem", this.calc.getDisplay());
+            }
+            else if (b.Name.Equals(buttonMR.Name))
+            {
+                String mem=(String)listBoxMemory.SelectedItem;
+                Console.WriteLine("Loaded {0} from memory", mem);
+                Complex c=calc.enterRectOperand(mem);
+                this.display.Text=c.ToString();
+            }
+
+            
+
+        }
     }
 }

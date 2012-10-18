@@ -77,14 +77,22 @@ namespace calc_gui
 		public Complex enterRectOperand (String input)
 		{
 			String [] parts = input.Trim ().Split ();
-			if (parts.Length != 2) {
+			if (parts.Length ==0 || parts.Length>2) {
 				currentState = ErrorState.Singleton;
 				return null;
-			} else {
-				Complex c = new Complex (Double.Parse (parts [0]), Double.Parse (parts [1]));
-				currentState.addOpperand (this, c);
-				return c;
 			}
+            else if (parts.Length == 1)
+            {
+                Complex c = new Complex(Double.Parse(parts[0]), 0);
+                currentState.addOpperand(this, c);
+                return c;
+            }
+            else
+            {
+                Complex c = new Complex(Double.Parse(parts[0]), Double.Parse(parts[1]));
+                currentState.addOpperand(this, c);
+                return c;
+            }
 		}
 
 		public Complex enterPolarOperand (string input)

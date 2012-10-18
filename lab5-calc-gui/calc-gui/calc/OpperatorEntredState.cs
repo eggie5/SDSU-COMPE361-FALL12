@@ -43,6 +43,8 @@ namespace calc_gui
 			calc.CurrentState = CompState.Singleton;
 			//calc.CurrentState=ErrorState.Singleton;
 			//throw new Exception("you cant do a calculation right after you add an opperator, need another opperand");
+
+
 		}
 
         public override void enterDigit(Calc calc, char c)

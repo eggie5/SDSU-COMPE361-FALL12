@@ -36,10 +36,12 @@ namespace calc_gui
 		public override void Calculate (Calc calc)
 		{
 			if (calc.pending_op != null) {
+                Complex opperand = Complex.Parse(calc.getDisplay());
 
-				Complex total = calc.pending_op.compute(calc.Total, Complex.Parse(calc.getDisplay()));
+				Complex total = calc.pending_op.compute(calc.Total, opperand);
 				//calc.Opperand1=total;
 				calc.Total = total;
+                calc.setDisplay(total.ToString());
 
 
 				calc.CurrentState = CompState.Singleton;
@@ -47,6 +49,7 @@ namespace calc_gui
 				calc.CurrentState=ErrorState.Singleton;
 //				throw new Exception("cannot do calculation w/o pending opperator");
 			}
+
 		}
 
 

@@ -61,6 +61,7 @@
             this.textBoxComplexReal = new System.Windows.Forms.TextBox();
             this.textBoxComplexImag = new System.Windows.Forms.TextBox();
             this.listBoxMemory = new System.Windows.Forms.ListBox();
+            this.buttonComplexInsert = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -370,11 +371,22 @@
             this.listBoxMemory.Size = new System.Drawing.Size(211, 95);
             this.listBoxMemory.TabIndex = 28;
             // 
+            // buttonComplexInsert
+            // 
+            this.buttonComplexInsert.Location = new System.Drawing.Point(319, 146);
+            this.buttonComplexInsert.Name = "buttonComplexInsert";
+            this.buttonComplexInsert.Size = new System.Drawing.Size(75, 49);
+            this.buttonComplexInsert.TabIndex = 29;
+            this.buttonComplexInsert.Text = "Insert";
+            this.buttonComplexInsert.UseVisualStyleBackColor = true;
+            this.buttonComplexInsert.Click += new System.EventHandler(this.buttonComplexInsert_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(587, 489);
+            this.Controls.Add(this.buttonComplexInsert);
             this.Controls.Add(this.listBoxMemory);
             this.Controls.Add(this.textBoxComplexImag);
             this.Controls.Add(this.textBoxComplexReal);
@@ -449,6 +461,7 @@
         private System.Windows.Forms.TextBox textBoxComplexReal;
         private System.Windows.Forms.TextBox textBoxComplexImag;
         private System.Windows.Forms.ListBox listBoxMemory;
+        private System.Windows.Forms.Button buttonComplexInsert;
     }
 }
 

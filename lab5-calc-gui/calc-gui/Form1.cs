@@ -60,12 +60,29 @@ namespace calc_gui
             else if (b.Name.Equals(buttonMR.Name))
             {
                 String mem=(String)listBoxMemory.SelectedItem;
-                Console.WriteLine("Loaded {0} from memory", mem);
-                Complex c=calc.enterRectOperand(mem);
+               
+                Complex parsed_complex = Complex.Parse(mem);
+                Console.WriteLine("Loaded {0} from memory", parsed_complex.ToString());
+                Complex c = calc.enterRectOperand(parsed_complex);
                 this.display.Text=c.ToString();
+            }
+            else if (b.Name.Equals(buttonMC.Name))
+            {
+                listBoxMemory.Items.Clear();
             }
 
             
+
+        }
+
+        private void buttonComplexInsert_Click(object sender, EventArgs e)
+        {
+
+            Complex c = Complex.Parse(String.Format("{0} {1}", textBoxComplexReal.Text, textBoxComplexImag.Text));
+            Console.WriteLine("Parsed {0} from complex input", c.ToString());
+
+
+            this.display.Text = calc.enterPolarOperand(c).ToString();
 
         }
     }

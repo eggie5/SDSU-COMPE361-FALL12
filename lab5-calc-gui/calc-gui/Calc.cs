@@ -95,6 +95,16 @@ namespace calc_gui
             }
 		}
 
+
+        public Complex enterRectOperand(Complex input)
+        {
+         
+                
+                currentState.addOpperand(this, input);
+                return input;
+            
+        }
+
 		public Complex enterPolarOperand (string input)
 		{
 			String [] parts = input.Trim ().Split ();
@@ -109,6 +119,13 @@ namespace calc_gui
 				return c;
 			}
 		}
+
+        public Complex enterPolarOperand(Complex c)
+        {
+                currentState.addOpperand(this, c);
+                return c;
+            
+        }
 
 		public void enterOp (String input_string)
 		{

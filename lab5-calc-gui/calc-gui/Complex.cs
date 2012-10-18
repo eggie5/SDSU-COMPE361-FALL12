@@ -16,6 +16,7 @@ namespace calc_gui
 			imag = im;
 		}
 
+        //from polar
 		public Complex (int fake, double magnitude, double angle)
 		{
 			real = Math.Cos(angle * Math.PI / 180)*magnitude;
@@ -37,10 +38,16 @@ namespace calc_gui
 				Complex c = new Complex(Double.Parse(parts[0]), 0);
 				return c;
 			}
-			else {
-				Complex c = new Complex (Double.Parse (parts [0]), Double.Parse (parts [1]));
-				return c;
-			}
+            else if (parts.Length == 4)
+            {
+                Complex c = new Complex(Double.Parse(parts[0]), Double.Parse(parts[3]));
+                return c;
+            }
+            else
+            {
+                Complex c = new Complex(Double.Parse(parts[0]), Double.Parse(parts[1]));
+                return c;
+            }
 		}
 
 		public double new_real

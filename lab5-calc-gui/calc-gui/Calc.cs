@@ -61,6 +61,21 @@ namespace calc_gui
             _display = d;
         }
 
+        public void setRect()
+        {
+
+            Complex.mode = MODE.Rectangular;
+        }
+        public void setPolar()
+        {
+            Complex.mode = MODE.Polar;
+        }
+
+        public MODE getMode()
+        {
+            return Complex.mode;
+        }
+
 		public void compute ()
 		{
 			currentState.Calculate (this);

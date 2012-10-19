@@ -28,8 +28,9 @@ namespace calc_gui
         private void onDigitButtonClick(object sender, EventArgs e)
         {
             Button b = (Button)sender;
+            String tag = (String)b.Tag;
 
-            this.display.Text=(calc.enterDigit(b.Text[0]));
+            this.display.Text = calc.enterDigit(tag[0]) ;
 
             //Complex c=calc.enterRectOperand(String.Format("{0} 0", b.Text));
             //this.display.Text = c.ToString();
@@ -44,8 +45,9 @@ namespace calc_gui
         private void onOpButtonClick(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            calc.enterOp(b.Text);
-            this.display.Text = b.Text;
+            String tag = (string)b.Tag;
+            calc.enterOp(tag);
+            this.display.Text = tag;
         }
 
         private void onButtonMemoryClick(object sender, EventArgs e)
@@ -81,9 +83,36 @@ namespace calc_gui
             Complex c = Complex.Parse(String.Format("{0} {1}", textBoxComplexReal.Text, textBoxComplexImag.Text));
             Console.WriteLine("Parsed {0} from complex input", c.ToString());
 
-
-            this.display.Text = calc.enterPolarOperand(c).ToString();
+            if(calc.getMode()==MODE.Rectangular)
+                this.display.Text = calc.enterRectOperand(c).ToString();
+            else if(calc.getMode()==MODE.Polar)
+                this.display.Text = calc.enterPolarOperand(c).ToString();
 
         }
+
+        private void buttonToggleModeClick(object sender, EventArgs e)
+        {
+            RadioButton b = (RadioButton)sender;
+            if (b.Name.Equals(radioButtonRect.Name))
+            {
+                calc.setRect();
+                this.display.Text = Complex.Parse(this.display.Text).ToString();
+            }
+            else if (b.Name.Equals(radioButtonPolar.Name))
+            {
+                calc.setPolar();
+                this.display.Text = Complex.Parse(this.display.Text).ToString();
+            }
+        }
+
+        private void clearButtonClick(object sender, EventArgs e)
+        {
+            calc.Clear();
+            this.display.Text = "0";
+        }
+
+
+
+  
     }
 }

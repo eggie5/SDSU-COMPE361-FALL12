@@ -55,6 +55,7 @@
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rectangularToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.polarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.display = new System.Windows.Forms.TextBox();
@@ -62,6 +63,8 @@
             this.textBoxComplexImag = new System.Windows.Forms.TextBox();
             this.listBoxMemory = new System.Windows.Forms.ListBox();
             this.buttonComplexInsert = new System.Windows.Forms.Button();
+            this.radioButtonRect = new System.Windows.Forms.RadioButton();
+            this.radioButtonPolar = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +74,8 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(50, 50);
             this.button7.TabIndex = 0;
-            this.button7.Text = "7";
+            this.button7.Tag = "7";
+            this.button7.Text = "&7";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.onDigitButtonClick);
             // 
@@ -81,7 +85,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(50, 50);
             this.button8.TabIndex = 1;
-            this.button8.Text = "8";
+            this.button8.Text = "&8";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.onDigitButtonClick);
             // 
@@ -91,7 +95,8 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(50, 50);
             this.button9.TabIndex = 2;
-            this.button9.Text = "9";
+            this.button9.Tag = "9";
+            this.button9.Text = "&9";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.onDigitButtonClick);
             // 
@@ -101,7 +106,8 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(50, 50);
             this.button4.TabIndex = 3;
-            this.button4.Text = "4";
+            this.button4.Tag = "3";
+            this.button4.Text = "&4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.onDigitButtonClick);
             // 
@@ -111,7 +117,8 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(50, 50);
             this.button5.TabIndex = 4;
-            this.button5.Text = "5";
+            this.button5.Tag = "5";
+            this.button5.Text = "&5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.onDigitButtonClick);
             // 
@@ -121,7 +128,8 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(50, 50);
             this.button6.TabIndex = 5;
-            this.button6.Text = "6";
+            this.button6.Tag = "6";
+            this.button6.Text = "&6";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.onDigitButtonClick);
             // 
@@ -131,7 +139,8 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 6;
-            this.button1.Text = "1";
+            this.button1.Tag = "1";
+            this.button1.Text = "&1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.onDigitButtonClick);
             // 
@@ -141,7 +150,8 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 50);
             this.button2.TabIndex = 7;
-            this.button2.Text = "2";
+            this.button2.Tag = "2";
+            this.button2.Text = "&2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.onDigitButtonClick);
             // 
@@ -151,7 +161,8 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(50, 50);
             this.button3.TabIndex = 8;
-            this.button3.Text = "3";
+            this.button3.Tag = "3";
+            this.button3.Text = "&3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.onDigitButtonClick);
             // 
@@ -161,7 +172,8 @@
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(106, 50);
             this.button0.TabIndex = 9;
-            this.button0.Text = "0";
+            this.button0.Tag = "0";
+            this.button0.Text = "&0";
             this.button0.UseVisualStyleBackColor = true;
             this.button0.Click += new System.EventHandler(this.onDigitButtonClick);
             // 
@@ -180,7 +192,7 @@
             this.buttonDivide.Name = "buttonDivide";
             this.buttonDivide.Size = new System.Drawing.Size(50, 50);
             this.buttonDivide.TabIndex = 11;
-            this.buttonDivide.Text = "/";
+            this.buttonDivide.Text = "&/";
             this.buttonDivide.UseVisualStyleBackColor = true;
             this.buttonDivide.Click += new System.EventHandler(this.onOpButtonClick);
             // 
@@ -190,7 +202,7 @@
             this.buttonMult.Name = "buttonMult";
             this.buttonMult.Size = new System.Drawing.Size(50, 50);
             this.buttonMult.TabIndex = 12;
-            this.buttonMult.Text = "*";
+            this.buttonMult.Text = "&*";
             this.buttonMult.UseVisualStyleBackColor = true;
             this.buttonMult.Click += new System.EventHandler(this.onOpButtonClick);
             // 
@@ -200,7 +212,7 @@
             this.buttonMinus.Name = "buttonMinus";
             this.buttonMinus.Size = new System.Drawing.Size(50, 50);
             this.buttonMinus.TabIndex = 13;
-            this.buttonMinus.Text = "-";
+            this.buttonMinus.Text = "&-";
             this.buttonMinus.UseVisualStyleBackColor = true;
             this.buttonMinus.Click += new System.EventHandler(this.onOpButtonClick);
             // 
@@ -210,7 +222,8 @@
             this.buttonPlus.Name = "buttonPlus";
             this.buttonPlus.Size = new System.Drawing.Size(50, 50);
             this.buttonPlus.TabIndex = 14;
-            this.buttonPlus.Text = "+";
+            this.buttonPlus.Tag = "+";
+            this.buttonPlus.Text = "&+";
             this.buttonPlus.UseVisualStyleBackColor = true;
             this.buttonPlus.Click += new System.EventHandler(this.onOpButtonClick);
             // 
@@ -220,7 +233,7 @@
             this.buttonEquals.Name = "buttonEquals";
             this.buttonEquals.Size = new System.Drawing.Size(50, 106);
             this.buttonEquals.TabIndex = 15;
-            this.buttonEquals.Text = "=";
+            this.buttonEquals.Text = "&=";
             this.buttonEquals.UseVisualStyleBackColor = true;
             this.buttonEquals.Click += new System.EventHandler(this.buttonEquals_Click);
             // 
@@ -241,6 +254,7 @@
             this.buttonCE.TabIndex = 17;
             this.buttonCE.Text = "CE";
             this.buttonCE.UseVisualStyleBackColor = true;
+            this.buttonCE.Click += new System.EventHandler(this.clearButtonClick);
             // 
             // buttonC
             // 
@@ -250,6 +264,7 @@
             this.buttonC.TabIndex = 18;
             this.buttonC.Text = "C";
             this.buttonC.UseVisualStyleBackColor = true;
+            this.buttonC.Click += new System.EventHandler(this.clearButtonClick);
             // 
             // buttonNegate
             // 
@@ -305,22 +320,33 @@
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rectangularToolStripMenuItem,
-            this.polarToolStripMenuItem});
+            this.polarToolStripMenuItem,
+            this.toolStripComboBox1});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // rectangularToolStripMenuItem
             // 
+            this.rectangularToolStripMenuItem.Checked = true;
+            this.rectangularToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.rectangularToolStripMenuItem.Name = "rectangularToolStripMenuItem";
-            this.rectangularToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.rectangularToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.rectangularToolStripMenuItem.Text = "Rectangular";
             // 
             // polarToolStripMenuItem
             // 
             this.polarToolStripMenuItem.Name = "polarToolStripMenuItem";
-            this.polarToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.polarToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.polarToolStripMenuItem.Text = "Polar";
+            // 
+            // toolStripComboBox1
+            // 
+            this.toolStripComboBox1.Items.AddRange(new object[] {
+            "Rect",
+            "Polar"});
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
             // 
             // helpToolStripMenuItem
             // 
@@ -377,15 +403,43 @@
             this.buttonComplexInsert.Name = "buttonComplexInsert";
             this.buttonComplexInsert.Size = new System.Drawing.Size(75, 49);
             this.buttonComplexInsert.TabIndex = 29;
-            this.buttonComplexInsert.Text = "Insert";
+            this.buttonComplexInsert.Text = "&Insert";
             this.buttonComplexInsert.UseVisualStyleBackColor = true;
             this.buttonComplexInsert.Click += new System.EventHandler(this.buttonComplexInsert_Click);
+            // 
+            // radioButtonRect
+            // 
+            this.radioButtonRect.AutoSize = true;
+            this.radioButtonRect.Checked = true;
+            this.radioButtonRect.Location = new System.Drawing.Point(45, 95);
+            this.radioButtonRect.Name = "radioButtonRect";
+            this.radioButtonRect.Size = new System.Drawing.Size(48, 17);
+            this.radioButtonRect.TabIndex = 30;
+            this.radioButtonRect.TabStop = true;
+            this.radioButtonRect.Text = "&Rect";
+            this.radioButtonRect.UseVisualStyleBackColor = true;
+     
+            this.radioButtonRect.Click += new System.EventHandler(this.buttonToggleModeClick);
+            // 
+            // radioButtonPolar
+            // 
+            this.radioButtonPolar.AutoSize = true;
+            this.radioButtonPolar.Location = new System.Drawing.Point(102, 95);
+            this.radioButtonPolar.Name = "radioButtonPolar";
+            this.radioButtonPolar.Size = new System.Drawing.Size(49, 17);
+            this.radioButtonPolar.TabIndex = 31;
+            this.radioButtonPolar.TabStop = true;
+            this.radioButtonPolar.Text = "&Polar";
+            this.radioButtonPolar.UseVisualStyleBackColor = true;
+            this.radioButtonPolar.Click += new System.EventHandler(this.buttonToggleModeClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(587, 489);
+            this.Controls.Add(this.radioButtonPolar);
+            this.Controls.Add(this.radioButtonRect);
             this.Controls.Add(this.buttonComplexInsert);
             this.Controls.Add(this.listBoxMemory);
             this.Controls.Add(this.textBoxComplexImag);
@@ -462,6 +516,9 @@
         private System.Windows.Forms.TextBox textBoxComplexImag;
         private System.Windows.Forms.ListBox listBoxMemory;
         private System.Windows.Forms.Button buttonComplexInsert;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
+        private System.Windows.Forms.RadioButton radioButtonRect;
+        private System.Windows.Forms.RadioButton radioButtonPolar;
     }
 }
 

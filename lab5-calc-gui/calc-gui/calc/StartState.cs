@@ -15,7 +15,7 @@ namespace calc_gui
 		public override void addOpperand (Calc calc, Complex c)
 		{
 
-			calc.Total=new Complex(0,0);
+			//calc.Total=new Complex(0,0);
 			calc.setDisplay(c.ToString());
 			calc.CurrentState = OpperandEnteredState.Singleton;
 

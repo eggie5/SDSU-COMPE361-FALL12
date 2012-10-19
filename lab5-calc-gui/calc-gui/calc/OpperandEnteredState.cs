@@ -28,6 +28,7 @@ namespace calc_gui
 
 		public override void addOpperator (Calc calc, IBinOp op)
 		{
+            calc.Total = Complex.Parse(calc.getDisplay());
 			calc.pending_op=op;
 			calc.CurrentState=OpperatorEntredState.Singleton;
 

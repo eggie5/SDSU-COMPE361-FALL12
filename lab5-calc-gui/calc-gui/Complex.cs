@@ -31,6 +31,7 @@ namespace calc_gui
 
 		public static Complex Parse (string input)
 		{
+            Console.WriteLine("attempting to parse {0}", input);
 			String [] parts = input.Trim ().Split ();
 			if (parts.Length == 0) {
 				throw new Exception("cannot parse");
@@ -43,10 +44,28 @@ namespace calc_gui
                 Complex c = new Complex(Double.Parse(parts[0]), Double.Parse(parts[3]));
                 return c;
             }
+            else if (parts[1].Equals("@"))//polar
+            {
+                Console.WriteLine("Detected polar, parsing...");
+                Complex c = new Complex(-1, Double.Parse(parts[0]), Double.Parse(parts[2]));
+                return c;
+            }
             else
             {
-                Complex c = new Complex(Double.Parse(parts[0]), Double.Parse(parts[1]));
-                return c;
+                if (Complex.mode == MODE.Rectangular)
+                {
+                    Complex c = new Complex(Double.Parse(parts[0]), Double.Parse(parts[1]));
+                    return c;
+                }
+                else if (Complex.mode == MODE.Polar)
+                {
+
+                    Complex c = new Complex(-1, Double.Parse(parts[0]), Double.Parse(parts[1]));
+                    return c;
+
+                }
+                else
+                    throw new Exception("could not parse ");
             }
 		}
 
@@ -115,7 +134,10 @@ namespace calc_gui
             }
             else
             {
-                return String.Format("{0:F2} @ {1:F2}", Magnitude, Angle);
+                if (Angle == 0)
+                    return String.Format("{0:F2}", Magnitude);
+                else
+                    return String.Format("{0:F2} @ {1:F2}", Magnitude, Angle);
             }
 		}
 

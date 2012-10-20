@@ -62,11 +62,14 @@ namespace calc_gui
             else if (b.Name.Equals(buttonMR.Name))
             {
                 String mem=(String)listBoxMemory.SelectedItem;
-               
-                Complex parsed_complex = Complex.Parse(mem);
-                Console.WriteLine("Loaded {0} from memory", parsed_complex.ToString());
-                Complex c = calc.enterRectOperand(parsed_complex);
-                this.display.Text=c.ToString();
+                if (mem != null)
+                {
+
+                    Complex parsed_complex = Complex.Parse(mem);
+                    Console.WriteLine("Loaded {0} from memory", parsed_complex.ToString());
+                    Complex c = calc.enterRectOperand(parsed_complex);
+                    this.display.Text = c.ToString();
+                }
             }
             else if (b.Name.Equals(buttonMC.Name))
             {
@@ -109,6 +112,12 @@ namespace calc_gui
         {
             calc.Clear();
             this.display.Text = "0";
+        }
+
+        private void viewHelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 b = new AboutBox1();
+            b.Show();
         }
 
 

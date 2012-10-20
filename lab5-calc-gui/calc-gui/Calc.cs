@@ -10,7 +10,7 @@ namespace calc_gui
 		private Complex total;
 
         //current display string
-        private String _display;
+        private String _display = "0";
 
 		public Calc ()
 		{

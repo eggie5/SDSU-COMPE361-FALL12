@@ -26,7 +26,7 @@ namespace calc_gui
 	
 
 			calc.CurrentState = ErrorState.Singleton;
-			throw new Exception ("cannot add opperator when an opperand has not been entered yet!");
+			//throw new Exception ("cannot add opperator when an opperand has not been entered yet!");
 		
 		}
 

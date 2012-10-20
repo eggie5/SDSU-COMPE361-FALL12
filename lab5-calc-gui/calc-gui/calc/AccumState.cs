@@ -23,8 +23,10 @@ namespace calc_gui
 
         public override void addOpperand(Calc calc, Complex c)
         {
-            calc.CurrentState = ErrorState.Singleton;
-            throw new Exception("Cannot add opperand in opperand entered state");
+            //calc.CurrentState = ErrorState.Singleton;
+            //throw new Exception("Cannot add opperand in opperand entered state");
+            calc.setDisplay(c.ToString());
+            calc.CurrentState = OpperandEnteredState.Singleton;
 
         }
 

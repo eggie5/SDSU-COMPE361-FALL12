@@ -31,8 +31,11 @@ namespace calc_gui
 
 		public override void addOpperator (Calc calc, IBinOp op)
 		{
-			calc.CurrentState=ErrorState.Singleton;
-			throw new Exception("cant add opperator in opperator entered state");
+            calc.pending_op = op;
+            calc.setDisplay("");
+            calc.CurrentState = OpperatorEntredState.Singleton;
+			//calc.CurrentState=ErrorState.Singleton;
+			//throw new Exception("cant add opperator in opperator entered state");
 		}
 
 		public override void Calculate (Calc calc)

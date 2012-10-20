@@ -52,10 +52,6 @@
             this.buttonMR = new System.Windows.Forms.Button();
             this.buttonMS = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rectangularToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.polarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.display = new System.Windows.Forms.TextBox();
@@ -192,6 +188,7 @@
             this.buttonDivide.Name = "buttonDivide";
             this.buttonDivide.Size = new System.Drawing.Size(50, 50);
             this.buttonDivide.TabIndex = 11;
+            this.buttonDivide.Tag = "/";
             this.buttonDivide.Text = "&/";
             this.buttonDivide.UseVisualStyleBackColor = true;
             this.buttonDivide.Click += new System.EventHandler(this.onOpButtonClick);
@@ -202,6 +199,7 @@
             this.buttonMult.Name = "buttonMult";
             this.buttonMult.Size = new System.Drawing.Size(50, 50);
             this.buttonMult.TabIndex = 12;
+            this.buttonMult.Tag = "*";
             this.buttonMult.Text = "&*";
             this.buttonMult.UseVisualStyleBackColor = true;
             this.buttonMult.Click += new System.EventHandler(this.onOpButtonClick);
@@ -212,6 +210,7 @@
             this.buttonMinus.Name = "buttonMinus";
             this.buttonMinus.Size = new System.Drawing.Size(50, 50);
             this.buttonMinus.TabIndex = 13;
+            this.buttonMinus.Tag = "-";
             this.buttonMinus.Text = "&-";
             this.buttonMinus.UseVisualStyleBackColor = true;
             this.buttonMinus.Click += new System.EventHandler(this.onOpButtonClick);
@@ -268,6 +267,7 @@
             // 
             // buttonNegate
             // 
+            this.buttonNegate.Enabled = false;
             this.buttonNegate.Location = new System.Drawing.Point(213, 205);
             this.buttonNegate.Name = "buttonNegate";
             this.buttonNegate.Size = new System.Drawing.Size(50, 50);
@@ -308,45 +308,12 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(587, 24);
             this.menuStrip1.TabIndex = 23;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // viewToolStripMenuItem
-            // 
-            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rectangularToolStripMenuItem,
-            this.polarToolStripMenuItem,
-            this.toolStripComboBox1});
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.viewToolStripMenuItem.Text = "View";
-            // 
-            // rectangularToolStripMenuItem
-            // 
-            this.rectangularToolStripMenuItem.Checked = true;
-            this.rectangularToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.rectangularToolStripMenuItem.Name = "rectangularToolStripMenuItem";
-            this.rectangularToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.rectangularToolStripMenuItem.Text = "Rectangular";
-            // 
-            // polarToolStripMenuItem
-            // 
-            this.polarToolStripMenuItem.Name = "polarToolStripMenuItem";
-            this.polarToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.polarToolStripMenuItem.Text = "Polar";
-            // 
-            // toolStripComboBox1
-            // 
-            this.toolStripComboBox1.Items.AddRange(new object[] {
-            "Rect",
-            "Polar"});
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
             // 
             // helpToolStripMenuItem
             // 
@@ -359,8 +326,9 @@
             // viewHelpToolStripMenuItem
             // 
             this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
-            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.viewHelpToolStripMenuItem.Text = "View Help";
+            this.viewHelpToolStripMenuItem.Click += new System.EventHandler(this.viewHelpToolStripMenuItem_Click);
             // 
             // display
             // 
@@ -418,7 +386,6 @@
             this.radioButtonRect.TabStop = true;
             this.radioButtonRect.Text = "&Rect";
             this.radioButtonRect.UseVisualStyleBackColor = true;
-     
             this.radioButtonRect.Click += new System.EventHandler(this.buttonToggleModeClick);
             // 
             // radioButtonPolar
@@ -506,9 +473,6 @@
         private System.Windows.Forms.Button buttonMR;
         private System.Windows.Forms.Button buttonMS;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rectangularToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem polarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewHelpToolStripMenuItem;
         private System.Windows.Forms.TextBox display;
@@ -516,7 +480,6 @@
         private System.Windows.Forms.TextBox textBoxComplexImag;
         private System.Windows.Forms.ListBox listBoxMemory;
         private System.Windows.Forms.Button buttonComplexInsert;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
         private System.Windows.Forms.RadioButton radioButtonRect;
         private System.Windows.Forms.RadioButton radioButtonPolar;
     }

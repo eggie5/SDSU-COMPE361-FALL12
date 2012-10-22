@@ -37,6 +37,8 @@ namespace calc_gui
             calc.setDisplay("");
             calc.CurrentState = OpperatorEntredState.Singleton;
 
+            
+
         }
 
         public override void Calculate(Calc calc)

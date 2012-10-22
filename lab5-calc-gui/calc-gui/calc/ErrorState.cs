@@ -15,8 +15,8 @@ namespace calc_gui
 
 		public override void addOpperand (Calc calc, Complex c)
 		{
-			//calc.setDisplay(c);
-			//calc.CurrentState=OpperandEnteredState.Singleton;
+            calc.setDisplay(c.ToString());
+            calc.CurrentState = OpperandEnteredState.Singleton;
 		}
 
 		public override void addOpperator (Calc calc, IBinOp op)
@@ -33,7 +33,12 @@ namespace calc_gui
 
         public override void enterDigit(Calc calc, char c)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Error State: enter character " + c);
+            calc.setDisplay("" + c);
+            if ('0' != c)
+            {
+                calc.CurrentState = AccumState.Singleton;
+            }
         }
 
 		#endregion

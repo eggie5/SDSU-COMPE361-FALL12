@@ -81,6 +81,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(50, 50);
             this.button8.TabIndex = 1;
+            this.button8.Tag = "8";
             this.button8.Text = "&8";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.onDigitButtonClick);
@@ -175,6 +176,7 @@
             // 
             // buttonDot
             // 
+            this.buttonDot.Enabled = false;
             this.buttonDot.Location = new System.Drawing.Point(157, 426);
             this.buttonDot.Name = "buttonDot";
             this.buttonDot.Size = new System.Drawing.Size(50, 50);
@@ -326,7 +328,7 @@
             // viewHelpToolStripMenuItem
             // 
             this.viewHelpToolStripMenuItem.Name = "viewHelpToolStripMenuItem";
-            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.viewHelpToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.viewHelpToolStripMenuItem.Text = "View Help";
             this.viewHelpToolStripMenuItem.Click += new System.EventHandler(this.viewHelpToolStripMenuItem_Click);
             // 

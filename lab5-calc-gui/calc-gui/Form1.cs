@@ -82,14 +82,21 @@ namespace calc_gui
 
         private void buttonComplexInsert_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Complex c = Complex.Parse(String.Format("{0} {1}", textBoxComplexReal.Text, textBoxComplexImag.Text));
+                Console.WriteLine("Parsed {0} from complex input", c.ToString());
 
-            Complex c = Complex.Parse(String.Format("{0} {1}", textBoxComplexReal.Text, textBoxComplexImag.Text));
-            Console.WriteLine("Parsed {0} from complex input", c.ToString());
-
-            if(calc.getMode()==MODE.Rectangular)
-                this.display.Text = calc.enterRectOperand(c).ToString();
-            else if(calc.getMode()==MODE.Polar)
-                this.display.Text = calc.enterPolarOperand(c).ToString();
+                if (calc.getMode() == MODE.Rectangular)
+                    this.display.Text = calc.enterRectOperand(c).ToString();
+                else if (calc.getMode() == MODE.Polar)
+                    this.display.Text = calc.enterPolarOperand(c).ToString();
+            }
+            catch (Exception)
+            {
+                calc.CurrentState = ErrorState.Singleton;
+                this.display.Text = "Argument Error";
+            }
 
         }
 

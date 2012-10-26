@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -35,12 +35,20 @@
     <Compile Include="Controller.cs" />
     <Compile Include="IGetNimBoard.cs" />
     <Compile Include="IUserInterface.cs" />
-    <Compile Include="MessageForm.cs" />
+    <Compile Include="MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NimBoard.cs" />
-    <Compile Include="NimControl.cs" />
-    <Compile Include="NimForm.cs" />
+    <Compile Include="NimControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NimModel.cs" />
-    <Compile Include="QuestionForm.cs" />
+    <Compile Include="QuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UIPeg.cs" />
   </ItemGroup>
   <ItemGroup>

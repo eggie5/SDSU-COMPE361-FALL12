@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="nim_test/MessageForm.cs">
+    <Files>
+      <File FileName="nim_test/NimForm.cs" Line="340" Column="1" />
+      <File FileName="nim_test/MessageForm.cs" Line="53" Column="9" />
+      <File FileName="nim_test/QuestionForm.cs" Line="105" Column="72" />
+      <File FileName="nim_test/NimModel.cs" Line="1" Column="1" />
+      <File FileName="nim_test/Controller.cs" Line="28" Column="2" />
+      <File FileName="nim_test/UIPeg.cs" Line="74" Column="17" />
+      <File FileName="nim_test/NimControl.cs" Line="56" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

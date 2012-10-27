@@ -195,10 +195,7 @@ private void LayoutControls()
 	this.ClientSize = new Size(384, 293);
 }
 
-static void Main() 
-{
-	Application.Run(new NimForm());
-}
+
 
 private void bnExit_Click(object sender, System.EventArgs e)
 {

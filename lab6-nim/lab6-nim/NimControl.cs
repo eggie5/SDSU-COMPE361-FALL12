@@ -1,24 +1,64 @@
-
-
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-
 using com.thisiscool.csharp.nim.controller;
 using com.thisiscool.csharp.nim.dataxfer;
 
 namespace com.thisiscool.csharp.nim.ui
 {
-internal class NimControl : Control
+public class NimControl : Control
 {
+    // private //
+    private IGetNimBoard m_iGetNimBoard = null;
+
+    public IGetNimBoard IGetNimBoard
+    {
+        get { return m_iGetNimBoard; }
+        set { m_iGetNimBoard = value; }
+    }
+    private IUserInterface m_iUserInterface = null;
+
+    public IUserInterface IUserInterface
+    {
+        get { return m_iUserInterface; }
+        set { m_iUserInterface = value; }
+    }
+    private UIPeg[,] m_arPeg;
+    private Timer m_Timer;
+
+    public NimControl()
+    {
+        //InitializeComponent();
+    }
+
+    public NimControl ( IGetNimBoard iGetNimBoard, IUserInterface iUserInterface)
+    {
+        m_iGetNimBoard = iGetNimBoard;
+        m_iUserInterface = iUserInterface;
+
+        MouseDown +=
+            new System.Windows.Forms.MouseEventHandler(OnMouseDown);
+
+        m_Timer = new Timer();
+        m_Timer.Tick += new EventHandler(TimerTick);
+        m_Timer.Interval = 400;
+        m_Timer.Start();
+
+        SetStyle(ControlStyles.ResizeRedraw, true);
+    }
+
+ 
 // protected //
 protected override void OnPaint(PaintEventArgs pe)
 {
+    if (DesignMode) return;
 	base.OnPaint(pe);
 	
 	using (Brush b = new SolidBrush(BackColor))
 		pe.Graphics.FillRectangle(b, pe.ClipRectangle);
 
+    if (m_iGetNimBoard == null) return;
+    if (m_iGetNimBoard.Board == null) return;
 	NimBoard aBoard = m_iGetNimBoard.Board;
 	if (aBoard == null) return;
 
@@ -46,25 +86,7 @@ protected override void OnPaint(PaintEventArgs pe)
 }
 
 // internal //
-internal NimControl
-	(
-	IGetNimBoard iGetNimBoard,
-	IUserInterface iUserInterface
-	)
-{
-	m_iGetNimBoard = iGetNimBoard;
-	m_iUserInterface = iUserInterface;
 
-	MouseDown +=
-		new System.Windows.Forms.MouseEventHandler(OnMouseDown);
-
-	m_Timer = new Timer();
-	m_Timer.Tick += new EventHandler(TimerTick);
-	m_Timer.Interval = 400;
-	m_Timer.Start();
-
-	SetStyle(ControlStyles.ResizeRedraw, true);
-}
 
 internal void GetSelectedPegs(out int nRow, out int nNbPegs)
 {
@@ -123,11 +145,7 @@ internal void DeselectAll()
 	}
 }
 
-// private //
-private IGetNimBoard m_iGetNimBoard = null;
-private IUserInterface m_iUserInterface = null;
-private UIPeg[,] m_arPeg;
-private Timer m_Timer;
+
 
 private void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 {

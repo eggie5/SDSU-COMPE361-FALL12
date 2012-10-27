@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -33,21 +33,43 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="Controller.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="IGetNimBoard.cs" />
     <Compile Include="IUserInterface.cs" />
-    <Compile Include="MessageForm.cs" />
+    <Compile Include="MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NimBoard.cs" />
-    <Compile Include="NimControl.cs" />
-    <Compile Include="NimForm.cs" />
+    <Compile Include="NimControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NimModel.cs" />
-    <Compile Include="QuestionForm.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="QuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UIPeg.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

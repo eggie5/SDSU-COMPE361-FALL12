@@ -35,7 +35,7 @@ namespace nim_test
 
         public void OnBoardChanged()
         {
-            throw new NotImplementedException();
+			nimControl1.Invalidate();
         }
 
         public void UpdateUI()
@@ -59,6 +59,7 @@ namespace nim_test
         public void Message(string strMessage, string strTitle, MessageDelegate delMsg)
         {
 			MessageBox.Show(strMessage, strTitle);
+			delMsg();
         }
 
         public void Error(string strMessage, string strTitle, MessageDelegate delMsg)

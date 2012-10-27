@@ -63,7 +63,7 @@
             this.nimControl1.BackColor = System.Drawing.SystemColors.HighlightText;
             this.nimControl1.IGetNimBoard = null;
             this.nimControl1.IUserInterface = null;
-            this.nimControl1.Location = new System.Drawing.Point(0, -1);
+            this.nimControl1.Location = new System.Drawing.Point(0, 0);
             this.nimControl1.Name = "nimControl1";
             this.nimControl1.Size = new System.Drawing.Size(557, 312);
             this.nimControl1.TabIndex = 1;

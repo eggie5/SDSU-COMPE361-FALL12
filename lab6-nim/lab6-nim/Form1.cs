@@ -42,7 +42,7 @@ namespace nim_test
         {
 			int nRow, nNbPegs;
 			nimControl1.GetSelectedPegs(out nRow, out nNbPegs);
-			//bnRemovePegs.Enabled = nNbPegs > 0;
+			buttonRemovePegs.Enabled = nNbPegs > 0;
         }
 
         public void Ask(string strQuestion, string strTitle, AskDelegate delAsk)
@@ -70,6 +70,11 @@ namespace nim_test
         {
             nimControl1.IGetNimBoard = m_Controller;
             nimControl1.IUserInterface = this;
+        }
+
+        private void buttonRemovePegs_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

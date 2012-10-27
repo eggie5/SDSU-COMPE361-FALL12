@@ -47,6 +47,7 @@
             // buttonRemovePegs
             // 
             this.buttonRemovePegs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRemovePegs.Enabled = false;
             this.buttonRemovePegs.Location = new System.Drawing.Point(404, 333);
             this.buttonRemovePegs.Name = "buttonRemovePegs";
             this.buttonRemovePegs.Size = new System.Drawing.Size(75, 23);

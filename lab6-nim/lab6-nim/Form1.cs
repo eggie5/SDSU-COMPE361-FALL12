@@ -71,6 +71,7 @@ namespace nim_test
         {
             nimControl1.IGetNimBoard = m_Controller;
             nimControl1.IUserInterface = this;
+            nimControl1.init();
         }
 
         private void buttonRemovePegs_Click(object sender, EventArgs e)

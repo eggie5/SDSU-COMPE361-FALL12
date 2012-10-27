@@ -47,6 +47,19 @@ public class NimControl : Control
         SetStyle(ControlStyles.ResizeRedraw, true);
     }
 
+    public void init()
+    {
+        MouseDown +=
+            new System.Windows.Forms.MouseEventHandler(OnMouseDown);
+
+        m_Timer = new Timer();
+        m_Timer.Tick += new EventHandler(TimerTick);
+        m_Timer.Interval = 400;
+        m_Timer.Start();
+
+        SetStyle(ControlStyles.ResizeRedraw, true);
+    }
+
  
 // protected //
 protected override void OnPaint(PaintEventArgs pe)

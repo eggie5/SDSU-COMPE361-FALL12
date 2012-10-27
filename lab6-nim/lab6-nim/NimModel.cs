@@ -68,8 +68,6 @@ namespace com.thisiscool.csharp.nim.model
 		{
 			bool bSolutionFound = false;
 
-			// The compiler isn't smart enough to see that
-			// all control paths return values.
 			rnRow = rnNbPegs = 0;
 
 			for (int nRow=0; nRow<NbRows && !bSolutionFound; ++nRow)

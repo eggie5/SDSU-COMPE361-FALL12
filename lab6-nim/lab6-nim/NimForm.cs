@@ -134,22 +134,7 @@ private void LayoutControls()
 	panel6.Size = new Size(384, 32);
 	panel6.TabIndex = 3;
 
-	label2.Dock = DockStyle.Top;
-	label2.ForeColor = SystemColors.HotTrack;
-	label2.Location = new Point(0, 0);
-	label2.Name = "label2";
-	label2.Size = new Size(384, 23);
-	label2.TabIndex = 0;
-	label2.Text = "(c) 2003 by Mohan Embar - Visit http://www.thisiscool.com/";
-	label2.TextAlign = ContentAlignment.MiddleCenter;
 
-	label1.Dock = DockStyle.Top;
-	label1.Location = new Point(0, 0);
-	label1.Name = "label1";
-	label1.Size = new Size(384, 23);
-	label1.TabIndex = 0;
-	label1.Text = "DotGNU(TM) Portable Nim: Dedicated to all DotGNUers";
-	label1.TextAlign = ContentAlignment.MiddleCenter;
 
 	panel5.Dock = DockStyle.Fill;
 	panel5.Location = new Point(0, 0);
@@ -179,7 +164,7 @@ private void LayoutControls()
 	Controls.Add(panel1);
 	MinimumSize = new Size(392, 320);
 	Name = "NimForm";
-	Text = "DotGNU(TM) Portable Nim";
+	Text = "Alex Nimm";
 	panel1.ResumeLayout(false);
 	panel2.ResumeLayout(false);
 	panel3.ResumeLayout(false);

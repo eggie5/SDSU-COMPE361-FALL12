@@ -1,17 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="nim_test/NimForm.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="lab6-nim/NimForm.cs">
     <Files>
-      <File FileName="nim_test/NimForm.cs" Line="10" Column="44" />
-      <File FileName="nim_test/MessageForm.cs" Line="1" Column="1" />
-      <File FileName="nim_test/QuestionForm.cs" Line="1" Column="1" />
-      <File FileName="nim_test/NimModel.cs" Line="1" Column="1" />
-      <File FileName="nim_test/Controller.cs" Line="1" Column="1" />
-      <File FileName="nim_test/UIPeg.cs" Line="1" Column="1" />
-      <File FileName="nim_test/NimControl.cs" Line="247" Column="1" />
-      <File FileName="nim_test/NimBoard.cs" Line="5" Column="41" />
-      <File FileName="nim_test/IGetNimBoard.cs" Line="1" Column="1" />
-      <File FileName="nim_test/IUserInterface.cs" Line="15" Column="15" />
+      <File FileName="lab6-nim/NimForm.cs" Line="324" Column="30" />
+      <File FileName="lab6-nim/NimModel.cs" Line="22" Column="10" />
+      <File FileName="lab6-nim/Controller.cs" Line="110" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

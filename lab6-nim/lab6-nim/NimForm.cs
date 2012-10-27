@@ -23,6 +23,12 @@ public NimForm()
 	UpdateUI();
 }
 
+//		 static void Main ()
+//		{
+
+//			Application.Run (new NimForm ());
+//		}
+
 // private //
 private MessageForm m_frmMessage = new MessageForm();
 private QuestionForm m_frmQuestion = new QuestionForm();

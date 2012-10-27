@@ -44,7 +44,7 @@
             // 
             // nimControl1
             // 
-            this.nimControl1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nimControl1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.nimControl1.IGetNimBoard = null;
             this.nimControl1.IUserInterface = null;
             this.nimControl1.Location = new System.Drawing.Point(45, 12);

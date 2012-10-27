@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using com.thisiscool.csharp.nim.controller;
@@ -41,19 +40,25 @@ namespace nim_test
 
         public void UpdateUI()
         {
-            throw new NotImplementedException();
+			int nRow, nNbPegs;
+			nimControl1.GetSelectedPegs(out nRow, out nNbPegs);
+			//bnRemovePegs.Enabled = nNbPegs > 0;
         }
 
         public void Ask(string strQuestion, string strTitle, AskDelegate delAsk)
         {
             var result=MessageBox.Show(strQuestion, strTitle, MessageBoxButtons.YesNo);
+			if(result==DialogResult.Yes)
+				delAsk(true);
+			else
+				delAsk(false);
             
 
         }
 
         public void Message(string strMessage, string strTitle, MessageDelegate delMsg)
         {
-            throw new NotImplementedException();
+			MessageBox.Show(strMessage, strTitle);
         }
 
         public void Error(string strMessage, string strTitle, MessageDelegate delMsg)

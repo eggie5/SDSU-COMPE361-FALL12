@@ -34,7 +34,7 @@
             // 
             // buttonNewGame
             // 
-            this.buttonNewGame.Location = new System.Drawing.Point(45, 301);
+            this.buttonNewGame.Location = new System.Drawing.Point(45, 333);
             this.buttonNewGame.Name = "buttonNewGame";
             this.buttonNewGame.Size = new System.Drawing.Size(75, 23);
             this.buttonNewGame.TabIndex = 0;
@@ -47,7 +47,7 @@
             this.nimControl1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.nimControl1.IGetNimBoard = null;
             this.nimControl1.IUserInterface = null;
-            this.nimControl1.Location = new System.Drawing.Point(2, -4);
+            this.nimControl1.Location = new System.Drawing.Point(45, 12);
             this.nimControl1.Name = "nimControl1";
             this.nimControl1.Size = new System.Drawing.Size(434, 299);
             this.nimControl1.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 350);
+            this.ClientSize = new System.Drawing.Size(558, 382);
             this.Controls.Add(this.nimControl1);
             this.Controls.Add(this.buttonNewGame);
             this.Name = "Form1";

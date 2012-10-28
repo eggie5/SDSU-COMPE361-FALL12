@@ -3,91 +3,76 @@ using System;
 
 namespace com.thisiscool.csharp.nim.model
 {
-	public class TooManyRowsException : Exception
-	{
-		public TooManyRowsException(int nNbRows) :
-			base("Too many rows: "+nNbRows)
-		{
-			m_nNbRows = nNbRows;
-		}
-
-		public int NbRows {get {return m_nNbRows;}}
-
-		// private //
-		private int m_nNbRows;
-	}
-	
 	public class NimModel
 	{
-		public NimModel(int nNbRows)
+		private int[] rows;
+
+		public NimModel (int num_of_rows)
 		{
-			if (nNbRows<0 || nNbRows>=10)
-			{
-				throw new TooManyRowsException(nNbRows);
+			if (num_of_rows < 0 || num_of_rows >= 10) {
+				throw new TooManyRowsException (num_of_rows);
 			}
 
-			m_nNbRows = nNbRows;
-			int nNbPegs = nNbRows;
-			for (int nRow=nNbRows-1; nRow>=0; --nRow)
-			{
-				m_arnPegs[nRow] = nNbPegs;
-				nNbPegs += 2;
+			rows = new int[num_of_rows];
+
+			//pegs/row should be random per spec.
+			Random rand = new Random (DateTime.Now.Millisecond);
+
+			for (int n=num_of_rows-1; n>=0; --n) {
+				rows [n] = rand.Next (1, 7);
 			}
 		}
 
 		// Accessors
-		public int NbRows               {get {return m_nNbRows;}}
-		public int GetPegsInRow(int nRow)
-		{
-			return m_arnPegs[nRow];
-		}
-		public bool IsGameOver
-		{
-			get 
-			{
-				int nNbPegsTotal = 0;
-				for (int nRow=0; nRow<NbRows; ++nRow)
-					nNbPegsTotal += GetPegsInRow(nRow);
+		public int RowCount               
+		{ get { return rows.Length; } }
 
-				return nNbPegsTotal == 0;
+		public int GetPegsInRow (int n)
+		{
+			return rows [n];
+		}
+
+		public bool IsGameOver {
+			get {
+				int total_pegs = 0;
+				for (int nRow=0; nRow<RowCount; ++nRow)
+					total_pegs += GetPegsInRow (nRow);
+
+				return total_pegs == 0;
 			}
 		}
 
 		// Operations
-		public bool MakeMove(int nRow, int nNbPegs)
+		public bool MakeMove (int nRow, int nNbPegs)
 		{
-			if (nRow>=NbRows || nNbPegs==0 || GetPegsInRow(nRow)<nNbPegs)
+			if (nRow >= RowCount || nNbPegs == 0 || GetPegsInRow (nRow) < nNbPegs)
 				return false;
 
-			m_arnPegs[nRow] -= nNbPegs;
+			rows [nRow] -= nNbPegs;
 
 			return true;
 		}
 
-		public void CalcBestMove(out int rnRow, out int rnNbPegs)
+		public void CalcBestMove (out int rnRow, out int rnNbPegs)
 		{
 			bool bSolutionFound = false;
 
 			rnRow = rnNbPegs = 0;
 
-			for (int nRow=0; nRow<NbRows && !bSolutionFound; ++nRow)
-			{
+			for (int nRow=0; nRow<RowCount && !bSolutionFound; ++nRow) {
 				int nXorStart = 0;
-				for (int i=0; i<NbRows; ++i)
-				{
-					if (i!=nRow)
-						nXorStart ^= GetPegsInRow(i);
+				for (int i=0; i<RowCount; ++i) {
+					if (i != nRow)
+						nXorStart ^= GetPegsInRow (i);
 				}
 				for
 				(
 					int nNbPegs=1;
 					nNbPegs<=GetPegsInRow(nRow) && !bSolutionFound;
 					++nNbPegs
-				)
-				{
-					int nXor = nXorStart ^ (GetPegsInRow(nRow)-nNbPegs);
-					if (nXor == 0)
-					{
+				) {
+					int nXor = nXorStart ^ (GetPegsInRow (nRow) - nNbPegs);
+					if (nXor == 0) {
 						bSolutionFound = true;
 						rnRow = nRow;
 						rnNbPegs = nNbPegs;
@@ -95,15 +80,12 @@ namespace com.thisiscool.csharp.nim.model
 				}
 			}
 
-			if (!bSolutionFound)
-			{
+			if (!bSolutionFound) {
 				int nRowWithMostPegs = 0;
 				int nMaxPegs = 0;
-				for (int i=0; i<NbRows; ++i)
-				{
-					if (GetPegsInRow(i)>nMaxPegs)
-					{
-						nMaxPegs = GetPegsInRow(i);
+				for (int i=0; i<RowCount; ++i) {
+					if (GetPegsInRow (i) > nMaxPegs) {
+						nMaxPegs = GetPegsInRow (i);
 						nRowWithMostPegs = i;
 					}
 				}
@@ -112,8 +94,20 @@ namespace com.thisiscool.csharp.nim.model
 			}
 		}
 
+
+	}
+
+	public class TooManyRowsException : Exception
+	{
+		public TooManyRowsException (int nNbRows) :
+			base("Too many rows: "+nNbRows)
+		{
+			row_count = nNbRows;
+		}
+		
+		public int RowsCount { get { return row_count; } }
+		
 		// private //
-		private int m_nNbRows;
-		private int[] m_arnPegs = new int[10];
+		private int row_count;
 	}
 }

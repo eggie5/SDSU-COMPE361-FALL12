@@ -73,8 +73,8 @@ namespace com.thisiscool.csharp.nim.controller
 				if (m_Model == null)
 					return null;
 
-				int[] arnRows = new int[m_Model.NbRows];
-				for (int i=0; i<m_Model.NbRows; ++i)
+				int[] arnRows = new int[m_Model.RowCount];
+				for (int i=0; i<m_Model.RowCount; ++i)
 					arnRows[i] = m_Model.GetPegsInRow(i);
 
 				return new NimBoard(arnRows);
@@ -107,7 +107,7 @@ namespace com.thisiscool.csharp.nim.controller
 		{
 			if (!bStart) return;
 
-			m_Model = new NimModel(3);
+			m_Model = new NimModel(6); //num of rows. If I change to 4 the paint code in control breaks :(
 			m_iUserInterface.InitBoard();
 
 			m_iUserInterface.Ask

@@ -23,7 +23,7 @@ public class NimControl : Control
         get { return m_iUserInterface; }
         set { m_iUserInterface = value; }
     }
-    private UIPeg[,] m_arPeg;
+    private UIPeg[,] pegs;
     private Timer m_Timer;
 
     public NimControl()
@@ -39,10 +39,10 @@ public class NimControl : Control
         MouseDown +=
             new System.Windows.Forms.MouseEventHandler(OnMouseDown);
 
-        m_Timer = new Timer();
-        m_Timer.Tick += new EventHandler(TimerTick);
-        m_Timer.Interval = 400;
-        m_Timer.Start();
+//        m_Timer = new Timer();
+//        m_Timer.Tick += new EventHandler(TimerTick);
+//        m_Timer.Interval = 400;
+//        m_Timer.Start();
 
         SetStyle(ControlStyles.ResizeRedraw, true);
     }
@@ -53,9 +53,9 @@ public class NimControl : Control
             new System.Windows.Forms.MouseEventHandler(OnMouseDown);
 
         m_Timer = new Timer();
-        m_Timer.Tick += new EventHandler(TimerTick);
-        m_Timer.Interval = 400;
-        m_Timer.Start();
+//        m_Timer.Tick += new EventHandler(TimerTick);
+//        m_Timer.Interval = 400;
+//        m_Timer.Start();
 
         SetStyle(ControlStyles.ResizeRedraw, true);
     }
@@ -64,7 +64,8 @@ public class NimControl : Control
 // protected //
 protected override void OnPaint(PaintEventArgs pe)
 {
-    if (DesignMode) return;
+    if (DesignMode) return; // so it doesn't crash the designer
+
 	base.OnPaint(pe);
 	
 	using (Brush b = new SolidBrush(BackColor))
@@ -78,20 +79,21 @@ protected override void OnPaint(PaintEventArgs pe)
 	// Calculate the size of each peg
 	Size sz = SafeSize;
 
-	int nHeight = (sz.Height - 20) / aBoard.NbRows;
-	int nWidth = (sz.Width - 20) / ((aBoard.NbRows << 1) + 1);
+	int nHeight = (sz.Height - 20) / aBoard.RowCount;
+	int nWidth = (sz.Width - 20) / ((aBoard.RowCount << 1) + 1);
 
 	int nSide = Math.Min(nWidth, nHeight);
 	nSide -= 10;
 
 	int nCurY = 10;
-	for (int i=0; i<aBoard.NbRows; ++i)
+	for (int i=0; i<aBoard.RowCount; i++)
 	{
 		int nNbPegs = aBoard.GetPegsInRow(i);
 		int nCurX = (sz.Width - nNbPegs*nWidth) >> 1;
-		for (int j=0; j<nNbPegs; ++j)
+		for (int j=0; j<nNbPegs; j++)
 		{
-			m_arPeg[j,i].Draw(pe, nCurX, nCurY, nSide);
+			Console.WriteLine("i={0}, j={1}", i,j);
+			pegs[j,i].Draw(pe, nCurX, nCurY, nSide);
 			nCurX += nWidth;
 		}
 		nCurY += nHeight;
@@ -110,15 +112,15 @@ internal void GetSelectedPegs(out int nRow, out int nNbPegs)
 		return;
 
 	nNbPegs = 0;
-	for (int i=0; i<aBoard.NbRows; ++i)
+	for (int i=0; i<aBoard.RowCount; i++)
 	{
 		int nNbPegsInThisRow = aBoard.GetPegsInRow(i);
-		for (int j=0; j<nNbPegsInThisRow; ++j)
+		for (int j=0; j<nNbPegsInThisRow; j++)
 		{
-			if (m_arPeg[j,i].MouthState == UIPeg.EMouthState.SAD)
+			if (pegs[j,i].MouthState == UIPeg.EMouthState.SAD)
 			{
 				nRow = i;
-				++nNbPegs;
+				nNbPegs++;
 			}
 		}
 	}
@@ -129,14 +131,15 @@ internal void InitBoard()
 	// Initialize our peg array. For simplicity's sake, we
 	// allocate a rectangular array even though not all elements
 	// will be used.
-	int nNbRows = m_iGetNimBoard.Board.NbRows;
-	int nNbCols = (nNbRows << 1) + 1;
-	m_arPeg = new UIPeg[nNbCols, nNbRows];
-	for (int i=0; i<nNbCols; ++i)
+	//int [] rows=m_iGetNimBoard.Board.GetArray();
+	int nNbRows = m_iGetNimBoard.Board.RowCount;
+	int nNbCols = m_iGetNimBoard.Board.getMaxPegCount();
+	pegs = new UIPeg[nNbCols, nNbRows];
+	for (int i=0; i<nNbCols; i++)
 	{
-		for (int j=0; j<nNbRows; ++j)
+		for (int j=0; j<nNbRows; j++)
 		{
-			m_arPeg[i,j] = new UIPeg();
+			pegs[i,j] = new UIPeg();
 		}
 	}
 	Invalidate();
@@ -148,12 +151,12 @@ internal void DeselectAll()
 	if (aBoard == null)
 		return;
 
-	for (int i=0; i<aBoard.NbRows; ++i)
+	for (int i=0; i<aBoard.RowCount; ++i)
 	{
 		int nNbPegsInThisRow = aBoard.GetPegsInRow(i);
 		for (int j=0; j<nNbPegsInThisRow; ++j)
 		{
-			m_arPeg[j,i].MouthState = UIPeg.EMouthState.HAPPY;
+			pegs[j,i].MouthState = UIPeg.EMouthState.HAPPY;
 		}
 	}
 }
@@ -170,8 +173,8 @@ private void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 	// Calculate the size of each peg
 	Size sz = SafeSize;
 
-	int nHeight = (sz.Height - 20) / aBoard.NbRows;
-	int nWidth = (sz.Width - 20) / ((aBoard.NbRows << 1) + 1);
+	int nHeight = (sz.Height - 20) / aBoard.RowCount;
+	int nWidth = (sz.Width - 20) / ((aBoard.RowCount << 1) + 1);
 
 	int nSide = Math.Min(nWidth, nHeight);
 	nSide -= 10;
@@ -180,7 +183,7 @@ private void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 	int nRow=-1, nCol=-1;
 	int nCurY = 10;
 
-	for (int i=0; i<aBoard.NbRows; ++i)
+	for (int i=0; i<aBoard.RowCount; ++i)
 	{
 		int nNbPegs = aBoard.GetPegsInRow(i);
 		int nCurX = (sz.Width - nNbPegs*nWidth) >> 1;
@@ -202,11 +205,11 @@ private void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 	if (nRow==-1 || nCol==-1)
 		return;
 
-	m_arPeg[nCol,nRow].MouthState = UIPeg.EMouthState.SAD;
+	pegs[nCol,nRow].MouthState = UIPeg.EMouthState.SAD;
 
 	// Now deselect pegs from all other rows
 	nCurY = 10;
-	for (int i=0; i<aBoard.NbRows; ++i)
+	for (int i=0; i<aBoard.RowCount; ++i)
 	{
 		int nNbPegs = aBoard.GetPegsInRow(i);
 		int nCurX = (sz.Width - nNbPegs*nWidth) >> 1;
@@ -216,10 +219,10 @@ private void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 				(
 				i!=nRow
 				&&
-				m_arPeg[j,i].MouthState==UIPeg.EMouthState.SAD
+				pegs[j,i].MouthState==UIPeg.EMouthState.SAD
 				)
 			{
-				m_arPeg[j,i].MouthState = UIPeg.EMouthState.HAPPY;
+				pegs[j,i].MouthState = UIPeg.EMouthState.HAPPY;
 				Rectangle rct =
 					new Rectangle(nCurX, nCurY, nWidth, nHeight);
 				Invalidate(rct);
@@ -240,8 +243,8 @@ private void TimerTick(object sender, EventArgs e)
 	// Calculate the size of each peg
 	Size sz = SafeSize;
 
-	int nHeight = (sz.Height - 20) / aBoard.NbRows;
-	int nWidth = (sz.Width - 20) / ((aBoard.NbRows << 1) + 1);
+	int nHeight = (sz.Height - 20) / aBoard.RowCount;
+	int nWidth = (sz.Width - 20) / ((aBoard.RowCount << 1) + 1);
 
 	int nSide = Math.Min(nWidth, nHeight);
 	nSide -= 10;
@@ -251,13 +254,13 @@ private void TimerTick(object sender, EventArgs e)
 	// If there are any eyes closed, open them.
 	int nCurY = 10;
 
-	for (int i=0; i<aBoard.NbRows; ++i)
+	for (int i=0; i<aBoard.RowCount; ++i)
 	{
 		int nNbPegs = aBoard.GetPegsInRow(i);
 		int nCurX = (sz.Width - nNbPegs*nWidth) >> 1;
 		for (int j=0; j<nNbPegs; ++j)
 		{
-			if (m_arPeg[j,i].ChangeState())
+			if (pegs[j,i].ChangeState())
 			{
 				// Invalidate the eyes only.
 				Rectangle rct =

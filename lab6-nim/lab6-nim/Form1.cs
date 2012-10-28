@@ -76,6 +76,10 @@ namespace nim_test
 
         private void buttonRemovePegs_Click(object sender, EventArgs e)
         {
+			int nRow, nNbPegs;
+			nimControl1.GetSelectedPegs(out nRow, out nNbPegs);
+			nimControl1.DeselectAll();
+			m_Controller.OnMove(nRow,nNbPegs);
 
         }
     }

@@ -9,3 +9,5 @@ C# programming
 * Lab 2 - Calculator that uses State Pattern
 * Lab 3 - Calculator (same as last lab, but WE implement the Complex class)
 * Lab 4 - Simon Says Game -- has render loop using timer, but no special design pattern
+* Lab 5 - GUI Calc -- uses same state machine from lab 2
+* Lab 6 - WinForms implementation of "Nim" game.

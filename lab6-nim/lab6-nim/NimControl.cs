@@ -24,7 +24,6 @@ public class NimControl : Control
         set { m_iUserInterface = value; }
     }
     private UIPeg[,] pegs;
-    private Timer m_Timer;
 
     public NimControl()
     {
@@ -52,10 +51,6 @@ public class NimControl : Control
         MouseDown +=
             new System.Windows.Forms.MouseEventHandler(OnMouseDown);
 
-        m_Timer = new Timer();
-//        m_Timer.Tick += new EventHandler(TimerTick);
-//        m_Timer.Interval = 400;
-//        m_Timer.Start();
 
         SetStyle(ControlStyles.ResizeRedraw, true);
     }
@@ -117,7 +112,7 @@ internal void GetSelectedPegs(out int nRow, out int nNbPegs)
 		int nNbPegsInThisRow = aBoard.GetPegsInRow(i);
 		for (int j=0; j<nNbPegsInThisRow; j++)
 		{
-			if (pegs[j,i].MouthState == UIPeg.EMouthState.SAD)
+			if (pegs[j,i].MouthState == UIPeg.Selected.NO)
 			{
 				nRow = i;
 				nNbPegs++;
@@ -156,7 +151,7 @@ internal void DeselectAll()
 		int nNbPegsInThisRow = aBoard.GetPegsInRow(i);
 		for (int j=0; j<nNbPegsInThisRow; ++j)
 		{
-			pegs[j,i].MouthState = UIPeg.EMouthState.HAPPY;
+			pegs[j,i].MouthState = UIPeg.Selected.YES;
 		}
 	}
 }
@@ -205,7 +200,7 @@ private void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 	if (nRow==-1 || nCol==-1)
 		return;
 
-	pegs[nCol,nRow].MouthState = UIPeg.EMouthState.SAD;
+	pegs[nCol,nRow].MouthState = UIPeg.Selected.NO;
 
 	// Now deselect pegs from all other rows
 	nCurY = 10;
@@ -219,10 +214,10 @@ private void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 				(
 				i!=nRow
 				&&
-				pegs[j,i].MouthState==UIPeg.EMouthState.SAD
+				pegs[j,i].MouthState==UIPeg.Selected.NO
 				)
 			{
-				pegs[j,i].MouthState = UIPeg.EMouthState.HAPPY;
+				pegs[j,i].MouthState = UIPeg.Selected.YES;
 				Rectangle rct =
 					new Rectangle(nCurX, nCurY, nWidth, nHeight);
 				Invalidate(rct);
@@ -235,47 +230,7 @@ private void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 	m_iUserInterface.UpdateUI();
 }
 
-private void TimerTick(object sender, EventArgs e)
-{
-	NimBoard aBoard = m_iGetNimBoard.Board;
-	if (aBoard == null) return;
 
-	// Calculate the size of each peg
-	Size sz = SafeSize;
-
-	int nHeight = (sz.Height - 20) / aBoard.RowCount;
-	int nWidth = (sz.Width - 20) / ((aBoard.RowCount << 1) + 1);
-
-	int nSide = Math.Min(nWidth, nHeight);
-	nSide -= 10;
-	int nIncrementX3 = (int) (nSide / 3.6);
-	int nIncrementX2 = (int) nSide / 5;
-
-	// If there are any eyes closed, open them.
-	int nCurY = 10;
-
-	for (int i=0; i<aBoard.RowCount; ++i)
-	{
-		int nNbPegs = aBoard.GetPegsInRow(i);
-		int nCurX = (sz.Width - nNbPegs*nWidth) >> 1;
-		for (int j=0; j<nNbPegs; ++j)
-		{
-			if (pegs[j,i].ChangeState())
-			{
-				// Invalidate the eyes only.
-				Rectangle rct =
-					new Rectangle
-					(
-					nCurX+nIncrementX3, nCurY+nIncrementX2+8,
-					8 + (nIncrementX3 << 1), nIncrementX3+nIncrementX2
-					);
-				Invalidate(rct);
-			}
-			nCurX += nWidth;
-		}
-		nCurY += nHeight;
-	}
-}
 
 // Hack to compensate for MinimumSize not being enforced.
 private Size SafeSize

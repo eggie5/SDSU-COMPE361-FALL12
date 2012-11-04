@@ -16,8 +16,10 @@ namespace com.thisiscool.csharp.nim.controller
 			m_iUserInterface = iUserInterface;
 		}
 
+        private int max_rows = 5;
+
 		// Operations
-		public void NewGame()
+		public void NewGame(int rows)
 		{
 			if (m_Model!=null && !m_Model.IsGameOver)
 			{
@@ -30,6 +32,7 @@ namespace com.thisiscool.csharp.nim.controller
 			}
 			else
 			{
+                max_rows = rows;
 				StartNewGame(true);
 			}
 		}
@@ -107,7 +110,9 @@ namespace com.thisiscool.csharp.nim.controller
 		{
 			if (!bStart) return;
 
-			m_Model = new NimModel(6); //num of rows. If I change to 4 the paint code in control breaks :(
+            Random r = new Random(DateTime.Now.Millisecond);
+            int rows = r.Next(3, max_rows+1); // spec is between 3 and max
+			m_Model = new NimModel(rows); //num of rows. If I change to 4 the paint code in control breaks :(
 			m_iUserInterface.InitBoard();
 
 			m_iUserInterface.Ask
@@ -141,9 +146,7 @@ namespace com.thisiscool.csharp.nim.controller
 		{
 			int nRow, nNbPegs;
 			m_Model.CalcBestMove(out nRow, out nNbPegs);
-				// Here, we cheat and recalculate the best
-				// move again since we are being forced to
-				// do things asynchronously.
+			
 
 			m_Model.MakeMove(nRow, nNbPegs);
 			m_iUserInterface.OnBoardChanged();
@@ -152,7 +155,7 @@ namespace com.thisiscool.csharp.nim.controller
 			{
 				m_iUserInterface.Message
 				(
-					"I win. Maybe you should stick to coding.",
+					"I win. You loose, now give me an A+",
 					"I win!",
 					new MessageDelegate(GameOver)
 				);

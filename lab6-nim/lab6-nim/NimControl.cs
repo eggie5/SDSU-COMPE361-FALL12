@@ -95,8 +95,6 @@ protected override void OnPaint(PaintEventArgs pe)
 	}
 }
 
-// internal //
-
 
 internal void GetSelectedPegs(out int nRow, out int nNbPegs)
 {
@@ -210,12 +208,7 @@ private void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 		int nCurX = (sz.Width - nNbPegs*nWidth) >> 1;
 		for (int j=0; j<nNbPegs; ++j)
 		{
-			if
-				(
-				i!=nRow
-				&&
-				pegs[j,i].MouthState==UIPeg.Selected.NO
-				)
+			if( i!=nRow && pegs[j,i].MouthState==UIPeg.Selected.NO )
 			{
 				pegs[j,i].MouthState = UIPeg.Selected.YES;
 				Rectangle rct =

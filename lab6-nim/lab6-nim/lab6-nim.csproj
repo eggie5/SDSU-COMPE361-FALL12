@@ -32,6 +32,12 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -47,9 +53,6 @@
     <Compile Include="NimBoard.cs" />
     <Compile Include="NimControl.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="NimForm.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="NimModel.cs" />
     <Compile Include="Program.cs" />
@@ -69,6 +72,9 @@
     <Reference Include="System.Data.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

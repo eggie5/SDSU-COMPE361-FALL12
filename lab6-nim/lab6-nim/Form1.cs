@@ -23,7 +23,7 @@ namespace nim_test
 
         private void buttonNewGame_Click(object sender, EventArgs e)
         {
-            m_Controller.NewGame();
+            m_Controller.NewGame(Int32.Parse(this.textBoxMaxRows.Text));
         }
 
 
@@ -58,6 +58,12 @@ namespace nim_test
 
         public void Message(string strMessage, string strTitle, MessageDelegate delMsg)
         {
+            //hack to show score (fastest way)
+            if(strMessage.Contains("I win."))
+            {
+                labelComputerScore.Text = (Int32.Parse(labelComputerScore.Text) + 1).ToString();
+            }
+
 			MessageBox.Show(strMessage, strTitle);
 			delMsg();
         }
@@ -82,5 +88,12 @@ namespace nim_test
 			m_Controller.OnMove(nRow,nNbPegs);
 
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new AboutBox1().Show();
+        }
+
+
     }
 }

@@ -10,18 +10,31 @@ using PaintEventArgs = System.Windows.Forms.PaintEventArgs;
 
 namespace com.thisiscool.csharp.nim.ui
 {
-	internal class UIPeg
+	public class UIPeg
 	{
-		// private //
+	
 		
 		private Selected brush = Selected.YES;
+        private Brush not_selected_color = Brushes.Blue;
+
+        public Brush Not_selected_color
+        {
+            get { return not_selected_color; }
+            set { not_selected_color = value; }
+        }
+        private Brush selected_color = Brushes.Red;
+
+        public Brush Selected_color
+        {
+            get { return selected_color; }
+            set { selected_color = value; }
+        }
 
 
-		public enum EEyesState {STRAIGHT, LEFT, RIGHT, CLOSED};
+		
 		public enum Selected {YES, NO};
 		
-		internal UIPeg()
-		{}
+		
 
 		internal Selected MouthState
 		{
@@ -41,7 +54,7 @@ namespace com.thisiscool.csharp.nim.ui
 
 			Color clr =Color.Blue;
 
-			Brush brsh = brush == Selected.YES ? Brushes.Blue : Brushes.Red;
+			Brush brsh = brush == Selected.YES ? not_selected_color : selected_color;
 
 			using (Pen aPen = new Pen(clr, nPenWidth)) {
 				// Draw the head

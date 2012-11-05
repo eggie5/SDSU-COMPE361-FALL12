@@ -48,9 +48,6 @@
     <Compile Include="NimControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="NimForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="NimModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="QuestionForm.cs">

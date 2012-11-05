@@ -78,7 +78,7 @@ namespace com.thisiscool.csharp.nim.model
 						rnNbPegs = nNbPegs;
 					}
 				}
-			}
+			}//end for
 
 			if (!bSolutionFound) {
 				int nRowWithMostPegs = 0;

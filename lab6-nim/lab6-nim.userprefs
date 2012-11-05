@@ -1,15 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="lab6-nim/Controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="lab6-nim/UIPeg.cs">
     <Files>
       <File FileName="lab6-nim/Form1.cs" Line="31" Column="9" />
-      <File FileName="lab6-nim/NimForm.cs" Line="341" Column="1" />
       <File FileName="lab6-nim/Form1.Designer.cs" Line="1" Column="1" />
-      <File FileName="lab6-nim/NimControl.cs" Line="25" Column="6" />
+      <File FileName="lab6-nim/NimControl.cs" Line="94" Column="20" />
       <File FileName="lab6-nim/IGetNimBoard.cs" Line="1" Column="1" />
       <File FileName="lab6-nim/NimBoard.cs" Line="18" Column="15" />
       <File FileName="lab6-nim/Controller.cs" Line="110" Column="28" />
-      <File FileName="lab6-nim/NimModel.cs" Line="52" Column="4" />
+      <File FileName="lab6-nim/NimModel.cs" Line="74" Column="23" />
+      <File FileName="lab6-nim/UIPeg.cs" Line="48" Column="21" />
+      <File FileName="lab6-nim/IUserInterface.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

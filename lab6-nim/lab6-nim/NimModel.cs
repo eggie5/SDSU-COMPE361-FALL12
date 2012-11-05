@@ -1,7 +1,7 @@
 
 using System;
 
-namespace com.thisiscool.csharp.nim.model
+namespace com.eggie5.nim.model
 {
 	public class NimModel
 	{
@@ -59,18 +59,14 @@ namespace com.thisiscool.csharp.nim.model
 
 			rnRow = rnNbPegs = 0;
 
+			//n^2 algorithm 
 			for (int nRow=0; nRow<RowCount && !bSolutionFound; ++nRow) {
 				int nXorStart = 0;
 				for (int i=0; i<RowCount; ++i) {
 					if (i != nRow)
 						nXorStart ^= GetPegsInRow (i);
 				}
-				for
-				(
-					int nNbPegs=1;
-					nNbPegs<=GetPegsInRow(nRow) && !bSolutionFound;
-					++nNbPegs
-				) {
+				for ( int nNbPegs=1; nNbPegs<=GetPegsInRow(nRow) && !bSolutionFound; ++nNbPegs ) {
 					int nXor = nXorStart ^ (GetPegsInRow (nRow) - nNbPegs);
 					if (nXor == 0) {
 						bSolutionFound = true;
@@ -107,7 +103,6 @@ namespace com.thisiscool.csharp.nim.model
 		
 		public int RowsCount { get { return row_count; } }
 		
-		// private //
 		private int row_count;
 	}
 }

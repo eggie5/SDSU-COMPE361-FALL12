@@ -2,10 +2,10 @@
 
 using System;
 
-using com.thisiscool.csharp.nim.dataxfer;
-using com.thisiscool.csharp.nim.model;
+using com.eggie5.nim.dataxfer;
+using com.eggie5.nim.model;
 
-namespace com.thisiscool.csharp.nim.controller
+namespace com.eggie5.nim.controller
 {
 
 	public class Controller : IGetNimBoard
@@ -44,9 +44,9 @@ namespace com.thisiscool.csharp.nim.controller
 				m_iUserInterface.OnBoardChanged();
 				if (m_Model.IsGameOver)
 				{
-					m_iUserInterface.Message
+					m_iUserInterface.MessageBoxShow
 						(
-						"Keep contributing to DotGNU!",
+						"Good Job!",
 						"Nice job!",
 						new MessageDelegate(GameOver)
 						);
@@ -84,7 +84,6 @@ namespace com.thisiscool.csharp.nim.controller
 			}
 		}
 
-		// private //
 		private NimModel m_Model = null;
 		private IUserInterface m_iUserInterface;
 
@@ -98,7 +97,7 @@ namespace com.thisiscool.csharp.nim.controller
 
 			string strPegs = nNbPegs==1 ? "peg" : "pegs";
 
-			m_iUserInterface.Message
+			m_iUserInterface.MessageBoxShow
 			(
 				"I remove "+nNbPegs+" "+strPegs+" from row "+(nRow+1)+".",
 				"My Move",
@@ -153,7 +152,7 @@ namespace com.thisiscool.csharp.nim.controller
 
 			if (m_Model.IsGameOver)
 			{
-				m_iUserInterface.Message
+				m_iUserInterface.MessageBoxShow
 				(
 					"I win. You loose, now give me an A+",
 					"I win!",

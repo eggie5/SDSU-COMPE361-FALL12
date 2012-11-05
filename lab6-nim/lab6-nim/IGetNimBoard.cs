@@ -1,9 +1,9 @@
 
 using System;
 
-using com.thisiscool.csharp.nim.dataxfer;
+using com.eggie5.nim.dataxfer;
 
-namespace com.thisiscool.csharp.nim.controller
+namespace com.eggie5.nim.controller
 {
 	public interface IGetNimBoard
 	{

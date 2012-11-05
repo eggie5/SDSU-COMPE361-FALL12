@@ -47,18 +47,12 @@
     </Compile>
     <Compile Include="IGetNimBoard.cs" />
     <Compile Include="IUserInterface.cs" />
-    <Compile Include="MessageForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="NimBoard.cs" />
     <Compile Include="NimControl.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="NimModel.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="QuestionForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="UIPeg.cs" />
   </ItemGroup>
   <ItemGroup>

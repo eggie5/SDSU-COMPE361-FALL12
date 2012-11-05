@@ -38,7 +38,7 @@
             this.labelComputerScore = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nimControl1 = new com.thisiscool.csharp.nim.ui.NimControl();
+            this.nimControl1 = new com.eggie5.nim.ui.NimControl();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -184,7 +184,7 @@
         #endregion
 
         private System.Windows.Forms.Button buttonNewGame;
-        private com.thisiscool.csharp.nim.ui.NimControl nimControl1;
+        private com.eggie5.nim.ui.NimControl nimControl1;
         private System.Windows.Forms.Button buttonRemovePegs;
         private System.Windows.Forms.TextBox textBoxMaxRows;
         private System.Windows.Forms.Label label1;

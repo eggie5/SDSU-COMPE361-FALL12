@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using com.thisiscool.csharp.nim.controller;
+using com.eggie5.nim.controller;
 
 namespace nim_test
 {
@@ -56,7 +56,7 @@ namespace nim_test
 
         }
 
-        public void Message(string strMessage, string strTitle, MessageDelegate delMsg)
+        public void MessageBoxShow(string strMessage, string strTitle, MessageDelegate delMsg)
         {
             //hack to show score (fastest way)
             if(strMessage.Contains("I win."))

@@ -1,14 +1,14 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using com.thisiscool.csharp.nim.controller;
-using com.thisiscool.csharp.nim.dataxfer;
+using com.eggie5.nim.controller;
+using com.eggie5.nim.dataxfer;
 
-namespace com.thisiscool.csharp.nim.ui
+namespace com.eggie5.nim.ui
 {
 public class NimControl : Control
 {
-    // private //
+  
     private IGetNimBoard m_iGetNimBoard = null;
 
     public IGetNimBoard IGetNimBoard
@@ -38,10 +38,6 @@ public class NimControl : Control
         MouseDown +=
             new System.Windows.Forms.MouseEventHandler(OnMouseDown);
 
-//        m_Timer = new Timer();
-//        m_Timer.Tick += new EventHandler(TimerTick);
-//        m_Timer.Interval = 400;
-//        m_Timer.Start();
 
         SetStyle(ControlStyles.ResizeRedraw, true);
     }
@@ -110,7 +106,7 @@ internal void GetSelectedPegs(out int nRow, out int nNbPegs)
 		int nNbPegsInThisRow = aBoard.GetPegsInRow(i);
 		for (int j=0; j<nNbPegsInThisRow; j++)
 		{
-			if (pegs[j,i].MouthState == UIPeg.Selected.NO)
+			if (pegs[j,i].PegState == UIPeg.Selected.NO)
 			{
 				nRow = i;
 				nNbPegs++;
@@ -121,10 +117,7 @@ internal void GetSelectedPegs(out int nRow, out int nNbPegs)
 
 internal void InitBoard()
 {
-	// Initialize our peg array. For simplicity's sake, we
-	// allocate a rectangular array even though not all elements
-	// will be used.
-	//int [] rows=m_iGetNimBoard.Board.GetArray();
+
 	int nNbRows = m_iGetNimBoard.Board.RowCount;
 	int nNbCols = m_iGetNimBoard.Board.getMaxPegCount();
 	pegs = new UIPeg[nNbCols, nNbRows];
@@ -149,7 +142,7 @@ internal void DeselectAll()
 		int nNbPegsInThisRow = aBoard.GetPegsInRow(i);
 		for (int j=0; j<nNbPegsInThisRow; ++j)
 		{
-			pegs[j,i].MouthState = UIPeg.Selected.YES;
+			pegs[j,i].PegState = UIPeg.Selected.YES;
 		}
 	}
 }
@@ -198,7 +191,7 @@ private void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 	if (nRow==-1 || nCol==-1)
 		return;
 
-	pegs[nCol,nRow].MouthState = UIPeg.Selected.NO;
+	pegs[nCol,nRow].PegState = UIPeg.Selected.NO;
 
 	// Now deselect pegs from all other rows
 	nCurY = 10;
@@ -208,9 +201,9 @@ private void OnMouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
 		int nCurX = (sz.Width - nNbPegs*nWidth) >> 1;
 		for (int j=0; j<nNbPegs; ++j)
 		{
-			if( i!=nRow && pegs[j,i].MouthState==UIPeg.Selected.NO )
+			if( i!=nRow && pegs[j,i].PegState==UIPeg.Selected.NO )
 			{
-				pegs[j,i].MouthState = UIPeg.Selected.YES;
+				pegs[j,i].PegState = UIPeg.Selected.YES;
 				Rectangle rct =
 					new Rectangle(nCurX, nCurY, nWidth, nHeight);
 				Invalidate(rct);

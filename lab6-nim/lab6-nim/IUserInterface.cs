@@ -1,6 +1,6 @@
 using System;
 
-namespace com.thisiscool.csharp.nim.controller
+namespace com.eggie5.nim.controller
 {
 	public delegate void MessageDelegate();
 	public delegate void AskDelegate(bool bAnswer);
@@ -12,7 +12,7 @@ namespace com.thisiscool.csharp.nim.controller
 		void UpdateUI();
 
 		void Ask(String strQuestion, String strTitle, AskDelegate delAsk);
-		void Message
+		void MessageBoxShow
 		(
 			String strMessage,
 			String strTitle,

@@ -3,7 +3,7 @@
 using System;
 using System.Data.Linq;
 
-namespace com.thisiscool.csharp.nim.dataxfer
+namespace com.eggie5.nim.dataxfer
 {
 
 	public class NimBoard

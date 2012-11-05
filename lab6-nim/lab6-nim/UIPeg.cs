@@ -8,7 +8,7 @@ using Pen = System.Drawing.Pen;
 using Rectangle = System.Drawing.Rectangle;
 using PaintEventArgs = System.Windows.Forms.PaintEventArgs;
 
-namespace com.thisiscool.csharp.nim.ui
+namespace com.eggie5.nim.ui
 {
 	public class UIPeg
 	{
@@ -36,7 +36,7 @@ namespace com.thisiscool.csharp.nim.ui
 		
 		
 
-		internal Selected MouthState
+		internal Selected PegState
 		{
 			get {return brush;}
 			set {brush = value;}
@@ -57,7 +57,6 @@ namespace com.thisiscool.csharp.nim.ui
 			Brush brsh = brush == Selected.YES ? not_selected_color : selected_color;
 
 			using (Pen aPen = new Pen(clr, nPenWidth)) {
-				// Draw the head
 				pe.Graphics.DrawEllipse (aPen, nX, nY, nSide, nSide);
 				pe.Graphics.FillEllipse (brsh, nX, nY, nSide, nSide);
 			}

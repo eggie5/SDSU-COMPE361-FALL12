@@ -400,6 +400,7 @@
             this.radioButtonPolar.TabStop = true;
             this.radioButtonPolar.Text = "&Polar";
             this.radioButtonPolar.UseVisualStyleBackColor = true;
+          
             this.radioButtonPolar.Click += new System.EventHandler(this.buttonToggleModeClick);
             // 
             // Form1

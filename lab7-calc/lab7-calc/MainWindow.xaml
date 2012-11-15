@@ -1,0 +1,36 @@
+﻿<Window x:Class="lab7_calc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="0,0,-266,-254">
+        <TextBox x:Name="display" HorizontalAlignment="Left" Height="64" Margin="25,24,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="394"/>
+        <RadioButton x:Name="radioButtonRect" Content="Rect&#xD;&#xA;" HorizontalAlignment="Left" Margin="25,107,0,0" VerticalAlignment="Top" Click="buttonToggleModeClick"/>
+        <RadioButton x:Name="radioButtonPolar" Content="Polar" HorizontalAlignment="Left" Margin="130,107,0,0" VerticalAlignment="Top" Click="buttonToggleModeClick"/>
+        <Button x:Name="buttonMC" Content="MC" HorizontalAlignment="Left" Margin="33,130,0,0" VerticalAlignment="Top" Width="31" Click="onButtonMemoryClick"/>
+        <Button x:Name="buttonMR" Content="MR" HorizontalAlignment="Left" Margin="88,130,0,0" VerticalAlignment="Top" Width="31" Click="onButtonMemoryClick" RenderTransformOrigin="4.501,0.428"/>
+        <Button x:Name="buttonMS" HorizontalAlignment="Left" Margin="142,130,0,0" VerticalAlignment="Top" Width="31" Click="onButtonMemoryClick" RenderTransformOrigin="4.501,0.428" Height="22" Content="MS">
+           
+        </Button>
+        <Button Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="31" Click="Button_Click_1" RenderTransformOrigin="4.501,0.428" Margin="33,229,0,0" Tag="4"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="33,187,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_1" RenderTransformOrigin="4.501,0.428" Tag="7"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="88,187,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_1" RenderTransformOrigin="4.501,0.428" Tag="8"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="142,187,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_1" RenderTransformOrigin="4.501,0.428" Tag="9"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="197,187,0,0" VerticalAlignment="Top" Width="31" Click="onOpButtonClick" RenderTransformOrigin="4.501,0.428" Tag="/"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="88,229,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_1" RenderTransformOrigin="4.501,0.428" Tag="5"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="142,229,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_1" RenderTransformOrigin="4.501,0.428" Tag="6"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="197,229,0,0" VerticalAlignment="Top" Width="31" Click="onOpButtonClick" RenderTransformOrigin="4.501,0.428" Tag="*"/>
+        <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="31" Click="Button_Click_1" RenderTransformOrigin="4.501,0.428" Margin="33,256,0,0" IsCancel="True" Tag="1"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="88,256,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_1" RenderTransformOrigin="4.501,0.428" Tag="2"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="142,256,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_1" RenderTransformOrigin="4.501,0.428" Tag="3"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="197,256,0,0" VerticalAlignment="Top" Width="31" Click="onOpButtonClick" RenderTransformOrigin="4.501,0.428" Tag="-"/>
+        <Button Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="86" Click="Button_Click_1" RenderTransformOrigin="4.501,0.428" Margin="33,287,0,0" Tag="0"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="197,287,0,0" VerticalAlignment="Top" Width="31" Click="onOpButtonClick" RenderTransformOrigin="4.501,0.428" Tag="+"/>
+        <TextBox x:Name="textBoxComplexReal" HorizontalAlignment="Left" Height="23" Margin="197,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxComplexImag" HorizontalAlignment="Left" Height="23" Margin="197,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonComplexInsert" Content="Insert" HorizontalAlignment="Left" Margin="322,116,0,0" VerticalAlignment="Top" Width="75" Height="45" Click="buttonComplexInsert_Click"/>
+        <Button x:Name="clearButton" HorizontalAlignment="Left" Margin="142,157,0,0" VerticalAlignment="Top" Width="31" Click="clearButton_Click" RenderTransformOrigin="4.501,0.428" Height="22" Content="C"/>
+        <Button x:Name="buttonEquals" Content="=" HorizontalAlignment="Left" Margin="242,206,0,0" VerticalAlignment="Top" Width="75" Height="103" Click="buttonEquals_Click"/>
+        <ListBox x:Name="listBoxMemory" HorizontalAlignment="Left" Height="100" Margin="322,209,0,0" VerticalAlignment="Top" Width="175"/>
+
+    </Grid>
+</Window>

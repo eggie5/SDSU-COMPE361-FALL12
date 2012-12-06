@@ -30,6 +30,22 @@ public class NimControl : Control
         //InitializeComponent();
     }
 
+    public void updatePegColor(System.Drawing.Color color)
+    {
+
+        System.Drawing.Brush b = new SolidBrush(color);
+        int nNbRows = m_iGetNimBoard.Board.RowCount;
+        int nNbCols = m_iGetNimBoard.Board.getMaxPegCount();
+       
+        for (int i = 0; i < nNbCols; i++)
+        {
+            for (int j = 0; j < nNbRows; j++)
+            {
+                pegs[i, j].Not_selected_color = b;
+            }
+        }
+    }
+
     public NimControl ( IGetNimBoard iGetNimBoard, IUserInterface iUserInterface)
     {
         m_iGetNimBoard = iGetNimBoard;

@@ -1,0 +1,18 @@
+﻿<Window x:Class="lab8_nim_wpf.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300">
+    <Grid>
+        <Label Content="Font:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lableFontname" Content="Arial" HorizontalAlignment="Left" Margin="61,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="fontButton" Content="Change" HorizontalAlignment="Left" Margin="207,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.84,-4.455" Click="fontButton_Click"/>
+        <Label Content="Back Color:" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lableFontname_Copy" Content="White" HorizontalAlignment="Left" Margin="98,74,0,0" VerticalAlignment="Top" RenderTransformOrigin="6.1,0.462"/>
+        <Button x:Name="buttonChangeBack" Content="Change" HorizontalAlignment="Left" Margin="207,74,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.84,-4.455" Click="buttonChangeBack_click"/>
+        <Label Content="Font:" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lableFontname_Copy1" Content="White" HorizontalAlignment="Left" Margin="127,145,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonChangeFore" Content="Change" HorizontalAlignment="Left" Margin="207,145,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.84,-4.455" Click="buttonChangeForeClick"/>
+        <Button x:Name="buttonSaveForm" Content="Button" HorizontalAlignment="Left" Margin="127,238,0,0" VerticalAlignment="Top" Width="75" Click="buttonSaveForm_Click"/>
+
+    </Grid>
+</Window>

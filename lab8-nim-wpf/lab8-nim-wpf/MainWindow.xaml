@@ -1,12 +1,17 @@
 ﻿<Window x:Class="lab8_nim_wpf.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded_1">
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded_1" FontFamily="Tahoma">
     <Grid Name="GridParent">
         <Grid Name="Grid1" Margin="0,10,0,50"/>
         <Grid Name="Controls">
-            <Button x:Name="buttonNewGame" Content="New Game!" HorizontalAlignment="Left" Margin="432,288,0,0" VerticalAlignment="Top" Width="75" Click="buttonNewGame_Click"/>
-            <Button x:Name="buttonRemovePegs" Content="Remove Peg" HorizontalAlignment="Left" Margin="324,288,0,0" VerticalAlignment="Top" Width="75" Click="buttonRemovePegs_Click"/>
+            <Button x:Name="buttonNewGame" Content="New Game!" Margin="365,288,77,0" VerticalAlignment="Bottom" Click="buttonNewGame_Click" HorizontalAlignment="Left"/>
+            <Button x:Name="buttonRemovePegs" Content="Remove Peg" HorizontalAlignment="Left" Margin="285,288,0,0" VerticalAlignment="Bottom" Width="75" Click="buttonRemovePegs_Click"/>
+            <Label x:Name="labelComputerScore" Content="0" HorizontalAlignment="Left" Margin="157,0,0,0" VerticalAlignment="Bottom"/>
+            <Label Content="Computer Score:" HorizontalAlignment="Left" Margin="66,0,0,0" VerticalAlignment="Bottom"/>
+            <Label Content="Human Score: 0" HorizontalAlignment="Left" Margin="176,290,0,0" VerticalAlignment="Bottom"/>
+            <TextBox x:Name="textBoxRows" HorizontalAlignment="Left" Height="23" Margin="459,288,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Bottom" Width="41"/>
+            <Button x:Name="buttonSettings" Content="Settings" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="64" Click="buttonSettings_Click" Height="24"/>
 
         </Grid>
         

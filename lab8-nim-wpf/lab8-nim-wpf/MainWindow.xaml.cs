@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms.Integration;
 using com.eggie5.nim.controller;
 
 namespace lab8_nim_wpf
@@ -23,11 +24,14 @@ namespace lab8_nim_wpf
     public partial class MainWindow : Window, IUserInterface
     {
         private Controller m_Controller;
-        private com.eggie5.nim.ui.NimControl nimControl1;
+        public com.eggie5.nim.ui.NimControl nimControl1;
+        Window1 w1;
+       
 
         public MainWindow()
         {
             m_Controller = new Controller(this);
+             w1=new Window1(this);
             InitializeComponent();
         }
 
@@ -47,12 +51,20 @@ namespace lab8_nim_wpf
 
         }
 
+        private void InitalizeComponent()
+        {
+
+            WindowsFormsHost h = new WindowsFormsHost();
+            h.Child = nimControl1;
+            this.Grid1.Children.Add(h);
+
+        }
+
         public void MessageBoxShow(string strMessage, string strTitle, MessageDelegate delMsg)
         {
-            //hack to show score (fastest way)
             if (strMessage.Contains("I win."))
             {
-               // labelComputerScore.Text = (Int32.Parse(labelComputerScore.Text) + 1).ToString();
+                labelComputerScore.Content = (Int32.Parse(labelComputerScore.Content.ToString()) + 1).ToString();
             }
 
             System.Windows.MessageBox.Show(strMessage, strTitle);
@@ -78,28 +90,22 @@ namespace lab8_nim_wpf
 
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
-            // Create the interop host control.
-            System.Windows.Forms.Integration.WindowsFormsHost host =
-                new System.Windows.Forms.Integration.WindowsFormsHost();
 
             nimControl1 = new com.eggie5.nim.ui.NimControl();
-
-            // Assign the MaskedTextBox control as the host control's child.
-            host.Child = nimControl1;
-
-            // Add the interop host control to the Grid 
-            // control's collection of child controls. 
-            this.Grid1.Children.Add(host);
-
-
             nimControl1.IGetNimBoard = m_Controller;
             nimControl1.IUserInterface = this;
             nimControl1.init();
+            InitalizeComponent();
+
+         
+            
         }
+
+       
 
         private void buttonNewGame_Click(object sender, RoutedEventArgs e)
         {
-            m_Controller.NewGame(5);
+            m_Controller.NewGame(Int32.Parse(textBoxRows.Text));
         }
 
         private void buttonRemovePegs_Click(object sender, RoutedEventArgs e)
@@ -108,6 +114,16 @@ namespace lab8_nim_wpf
             nimControl1.GetSelectedPegs(out nRow, out nNbPegs);
             nimControl1.DeselectAll();
             m_Controller.OnMove(nRow, nNbPegs);
+        }
+
+        private void buttonSettings_Click(object sender, RoutedEventArgs e)
+        {
+
+           w1.Show();
+         
+               
+               
+           
         }
 
     }

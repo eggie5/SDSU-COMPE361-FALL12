@@ -11,3 +11,5 @@ C# programming
 * Lab 4 - Simon Says Game -- has render loop using timer, but no special design pattern
 * Lab 5 - GUI Calc -- uses same state machine from lab 2
 * Lab 6 - WinForms implementation of "Nim" game.
+* Lab 7 - WPF Calc (used lab 5 code)
+* Lab 8 - WPF Nim Game (used lab 6 code)
